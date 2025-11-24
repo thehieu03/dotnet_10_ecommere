@@ -7,5 +7,6 @@ public class ProductMappingProfile:Profile
         CreateMap<ProductBrand,BrandResponse>().ReverseMap();
         CreateMap<Product,ProductResponse>().ReverseMap();
         CreateMap<ProductType,TypesResponse>().ReverseMap();
+        CreateMap<Product,CreateProductCommand>().ReverseMap();
     }
 }

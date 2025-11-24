@@ -18,7 +18,7 @@
         <Using Include="MongoDB.Bson.IO"/>
         <Using Include="System.Text.Json"/>
         <Using Include="Microsoft.Extensions.Configuration"/>
-              
+        <Using Include="Catalog.Core.Repositories"/>
     </ItemGroup>
     <ItemGroup>
       <None Update="Data\SeedData\brands.json">

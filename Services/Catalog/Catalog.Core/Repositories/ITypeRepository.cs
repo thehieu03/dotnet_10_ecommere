@@ -2,5 +2,5 @@
 
 public interface ITypeRepository
 {
-    Task<IEnumerable<Type>> GetTypesAsync();
+    Task<IEnumerable<ProductType>> GetTypesAsync();
 }

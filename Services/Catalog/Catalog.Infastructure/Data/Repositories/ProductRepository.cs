@@ -8,7 +8,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
     {
         _context = catalogContext;
     }
-    public async Task<IEnumerable<Product>> GetAllProductAsync()
+    public async Task<IEnumerable<Product>> GetAllProductsAsync()
     {
         return await  _context
             .Products
@@ -70,7 +70,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
         return deleteResult.IsAcknowledged && deleteResult.DeletedCount > 0;
     }
 
-    public async Task<IEnumerable<ProductBrand>> getAllBrandsAsync()
+    public async Task<IEnumerable<ProductBrand>> GetAllBrandsAsync()
     {
         return await _context
             .ProductBrands

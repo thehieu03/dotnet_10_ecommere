@@ -2,5 +2,5 @@
 
 public interface IBrandRepository
 {
-    Task<IEnumerable<ProductBrand>> getAllBrandsAsync();
+    Task<IEnumerable<ProductBrand>> GetAllBrandsAsync();
 }

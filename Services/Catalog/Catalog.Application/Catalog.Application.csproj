@@ -10,4 +10,23 @@
       <ProjectReference Include="..\Catalog.Core\Catalog.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Commands\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="16.0.0-beta-1" />
+      <PackageReference Include="MediatR" Version="14.0.0-beta-1" />
+    </ItemGroup>
+    <ItemGroup>
+        <Using Include="MediatR"/>
+        <Using Include="Catalog.Application.Responses"/>
+        <Using Include="AutoMapper"/>
+        <Using Include="Catalog.Application.Queries"/>
+        <Using Include="Catalog.Core.Repositories"/>
+        <Using Include="Catalog.Core.Entities"/>
+        <Using Include="Catalog.Application.Mapper"/>
+        <Using Include="MongoDB.Bson.Serialization.Attributes"/>
+        <Using Include="MongoDB.Bson"/>
+    </ItemGroup>
 </Project>

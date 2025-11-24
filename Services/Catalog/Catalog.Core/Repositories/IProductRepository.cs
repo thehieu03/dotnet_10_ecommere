@@ -2,7 +2,7 @@
 
 public interface IProductRepository
 {
-    Task<IEnumerable<Product>> GetAllProductAsync();
+    Task<IEnumerable<Product>> GetAllProductsAsync();
     Task<Product> GetProductByIdAsync(string productId);
     Task<IEnumerable<Product>> GetProductByNameAsync(string productName);
     Task<IEnumerable<Product>> GetProductByBrandAsync(string brandName);

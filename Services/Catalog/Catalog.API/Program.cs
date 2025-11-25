@@ -9,6 +9,13 @@ builder.Services.AddSwaggerGen(c =>
         Version = "v1"
     });
 });
+builder.Services.AddAutoMapper(typeof(Catalog.Application.Mapper.ProductMappingProfile).Assembly);
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+// Register Application Services
+builder.Services.AddScoped<ICatalogContext, CatalogContext>();
+builder.Services.AddScoped<IProductRepository,ProductRepository>();
+builder.Services.AddScoped<IBrandRepository,ProductRepository>();
+builder.Services.AddScoped<ITypeRepository,ProductRepository>();
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

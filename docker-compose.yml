@@ -4,15 +4,24 @@ services:
     build:
       context: .
       dockerfile: Services/Catalog/Catalog.API/Dockerfile
+      
   catalog.db:
     image: mongo
+    
   basket.db:
     image: redis:alpine
+    
   basket.api:
     image: ${DOCKER_REGISTRY-}basketapi
     build:
       context: .
       dockerfile: Services/Basket/Basket.API/Dockerfile
-
+      
+  portainer:
+    image: portainer/portainer-ce
+    
+    
+    
 volumes:
   mongo_data:
+  portainer_data:  

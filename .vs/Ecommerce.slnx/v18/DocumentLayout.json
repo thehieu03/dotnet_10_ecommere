@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "docker-compose.override.yml",
               "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.override.yml",
               "RelativeToolTip": "docker-compose.override.yml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2025-11-26T17:43:05.08Z",
               "EditorCaption": ""
@@ -55,21 +55,19 @@
               "RelativeToolTip": "docker-compose.yml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-11-26T17:43:02.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T17:43:02.494Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "docker-compose",
+              "Title": "docker-compose.dcproj",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.dcproj",
               "RelativeDocumentMoniker": "docker-compose.dcproj",
               "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.dcproj",
               "RelativeToolTip": "docker-compose.dcproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-26T17:42:49.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T17:42:49.666Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "Services\\Catalog\\Catalog.API\\Controllers\\ApiController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T02:51:45.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T02:51:45.288Z"
             }
           ]
         }

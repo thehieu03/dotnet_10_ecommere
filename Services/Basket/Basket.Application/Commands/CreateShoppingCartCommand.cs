@@ -2,9 +2,8 @@
 
 namespace Basket.Application.Commands;
 
-public abstract class CreateShoppingCartCommand(string userName, List<ShoppingCartItem> shoppingCartItems)
-    : IRequest<ShoppingCartResponse>
+public class CreateShoppingCartCommand : IRequest<ShoppingCartResponse>
 {
-    public  string UserName { get; set; } = userName;
-    public List<ShoppingCartItem> ShoppingCartItems { get; set; } = shoppingCartItems;
+    public string UserName { get; set; } = default!;
+    public List<ShoppingCartItem> ShoppingCartItems { get; set; } = new();
 }

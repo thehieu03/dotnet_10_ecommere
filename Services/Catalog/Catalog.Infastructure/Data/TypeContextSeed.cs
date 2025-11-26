@@ -5,7 +5,8 @@ public static class TypeContextSeed
     public static void SeedData(IMongoCollection<ProductType> typeCollection)
     {
         bool checkType = typeCollection.Find(p => true).Any();
-        string path= Path.Combine("Data","SeedData","types.json");
+        var basePath = Path.GetDirectoryName(typeof(TypeContextSeed).Assembly.Location) ?? string.Empty;
+        string path = Path.Combine(basePath, "Data", "SeedData", "types.json");
         if(!checkType)
         {
             var typesData = File.ReadAllText(path);

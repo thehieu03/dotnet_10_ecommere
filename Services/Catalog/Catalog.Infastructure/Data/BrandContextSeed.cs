@@ -5,7 +5,8 @@ public static class BrandContextSeed
     public static void SeedData(IMongoCollection<ProductBrand> brandCollection)
     {
         bool checkBrand = brandCollection.Find(p => true).Any();
-        string path= Path.Combine("Data","SeedData","brands.json");
+        var basePath = Path.GetDirectoryName(typeof(BrandContextSeed).Assembly.Location) ?? string.Empty;
+        string path = Path.Combine(basePath, "Data", "SeedData", "brands.json");
         if(!checkBrand)
         {
             var brandsData = File.ReadAllText(path);

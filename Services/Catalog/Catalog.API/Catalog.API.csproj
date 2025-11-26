@@ -36,6 +36,7 @@
     <Using Include="Catalog.Application.Queries" />
     <Using Include="Catalog.Application.Commands" />
     <Using Include="System.Net" />
+    <Using Include="Catalog.Application.Handler" />
   </ItemGroup>
 
 </Project>

@@ -5,7 +5,8 @@ public static class CatalogContextSeed
     public static void SeedData(IMongoCollection<Product> productCollection)
     {
         bool checkProduct = productCollection.Find(p => true).Any();
-        string path= Path.Combine("Data","SeedData","products.json");
+        var basePath = Path.GetDirectoryName(typeof(CatalogContextSeed).Assembly.Location) ?? string.Empty;
+        string path = Path.Combine(basePath, "Data", "SeedData", "products.json");
         if(!checkProduct)
         {
             var productsData = File.ReadAllText(path);

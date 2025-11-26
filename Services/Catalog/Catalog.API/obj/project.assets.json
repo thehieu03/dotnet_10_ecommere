@@ -2123,7 +2123,6 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "Asp.Versioning.Mvc >= 8.1.0",
-      "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Catalog.Application >= 1.0.0",
       "Catalog.Infastructure >= 1.0.0",
@@ -2193,10 +2192,6 @@
           "Asp.Versioning.Mvc": {
             "target": "Package",
             "version": "[8.1.0, )"
-          },
-          "AutoMapper": {
-            "target": "Package",
-            "version": "[12.0.1, )"
           },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",

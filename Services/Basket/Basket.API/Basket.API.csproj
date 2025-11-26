@@ -9,6 +9,10 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0"/>
+        <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.0.1" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     </ItemGroup>
 
     <ItemGroup>
@@ -21,5 +25,13 @@
       <ProjectReference Include="..\Basket.Application\Basket.Application.csproj" />
       <ProjectReference Include="..\Basket.Infrastructure\Basket.Infrastructure.csproj" />
     </ItemGroup>
-
+    <ItemGroup>
+        <Using  Include="Asp.Versioning"/>
+        <Using  Include="Microsoft.AspNetCore.Mvc"/>
+        <Using  Include="Microsoft.OpenApi"/>
+        <Using  Include="Basket.Application.Handlers"/>
+        <Using  Include="System.Reflection"/>
+        <Using  Include="Basket.Core.Repositories"/>
+        <Using  Include="Basket.Infrastructure.Repositories"/>
+    </ItemGroup>
 </Project>

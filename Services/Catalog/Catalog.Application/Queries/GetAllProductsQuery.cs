@@ -2,12 +2,7 @@
 
 namespace Catalog.Application.Queries;
 
-public class GetAllProductsQuery:IRequest<Pagination<ProductResponse>>
+public class GetAllProductsQuery(CatalogSpecParams catalogSpecParams) : IRequest<Pagination<ProductResponse>>
 {
-    public readonly CatalogSpecParams CatalogSpecParams;
-
-    public GetAllProductsQuery(CatalogSpecParams catalogSpecParams)
-    {
-        CatalogSpecParams = catalogSpecParams;
-    }
+    public readonly CatalogSpecParams CatalogSpecParams = catalogSpecParams;
 }

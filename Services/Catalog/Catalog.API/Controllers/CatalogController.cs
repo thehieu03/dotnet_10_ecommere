@@ -1,13 +1,7 @@
 ﻿namespace Catalog.API.Controllers;
 
-public class CatalogController:ApiController
+public class CatalogController(IMediator mediator) : ApiController
 {
-    private readonly IMediator _mediator;
-
-    public CatalogController(IMediator mediator)
-    {
-        _mediator = mediator;
-    }
     [HttpGet]
     [Route("[action]/{id}",Name = "GetProductById")]
     [ProducesResponseType(typeof(ProductResponse),(int)HttpStatusCode.OK)]
@@ -15,7 +9,7 @@ public class CatalogController:ApiController
     public async Task<ActionResult<ProductResponse>> GetProductByIdAsync(string id)
     {
         var query = new GetProductByIdQuery(id);
-        var result= await _mediator.Send(query);
+        var result= await mediator.Send(query);
         return Ok(result);
     }
     [HttpGet]
@@ -25,7 +19,7 @@ public class CatalogController:ApiController
     public async Task<ActionResult<IList<ProductResponse>>> GetProductByProductNameAsync(string productName)
     {
         var query = new GetProductByNameQuery(productName);
-        var result= await _mediator.Send(query);
+        var result= await mediator.Send(query);
         return Ok(result);
     }
 
@@ -35,7 +29,7 @@ public class CatalogController:ApiController
     public async Task<ActionResult<IList<ProductResponse>>> GetAllProductsAsync([FromQuery] CatalogSpecParams catalogSpecParams)
     {
         var query = new GetAllProductsQuery(catalogSpecParams);
-        var result = await _mediator.Send(query);
+        var result = await mediator.Send(query);
         return Ok(result);
     }
     [HttpGet]
@@ -44,7 +38,7 @@ public class CatalogController:ApiController
     public async Task<ActionResult<IList<BrandResponse>>> GetAllBrandsAsync()
     {
         var query = new GetAllBrandsQuery();
-        var result = await _mediator.Send(query);
+        var result = await mediator.Send(query);
         return Ok(result);
     }
     [HttpGet]
@@ -53,7 +47,7 @@ public class CatalogController:ApiController
     public async Task<ActionResult<IList<TypesResponse>>> GetAllTypes()
     {
         var query = new GetAllTypesQuery();
-        var result = await _mediator.Send(query);
+        var result = await mediator.Send(query);
         return Ok(result);
     }
     [HttpGet]
@@ -63,7 +57,7 @@ public class CatalogController:ApiController
     public async Task<ActionResult<IList<ProductResponse>>> GetAllProductByBrandName(string brandName)
     {
         var query = new GetProductByBrandNameQuery(brandName);
-        var result = await _mediator.Send(query);
+        var result = await mediator.Send(query);
         return result==null || result.Count == 0 ? NotFound() : Ok(result);
     }
     [HttpPost]
@@ -71,7 +65,7 @@ public class CatalogController:ApiController
     [ProducesResponseType(typeof(ProductResponse), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<ProductResponse>> CreateProduct([FromBody] CreateProductCommand command)
     {
-        var result = await _mediator.Send(command);
+        var result = await mediator.Send(command);
         return Ok(result);
     }
     [HttpPut]
@@ -79,7 +73,7 @@ public class CatalogController:ApiController
     [ProducesResponseType(typeof(bool), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<bool>> UpdateProduct([FromBody] UpdateProductCommand command)
     {
-        var result = await _mediator.Send(command);
+        var result = await mediator.Send(command);
         return Ok(result);
     }
     [HttpDelete]
@@ -88,7 +82,7 @@ public class CatalogController:ApiController
     public async Task<ActionResult<bool>> DeleteProduct(string id)
     {
         var command = new DeleteProductByIdCommand(id);
-        var result = await _mediator.Send(command);
+        var result = await mediator.Send(command);
         return Ok(result);
     }
     

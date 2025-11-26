@@ -1,11 +1,6 @@
 ﻿namespace Catalog.Application.Queries;
 
-public class GetProductByIdQuery:IRequest<ProductResponse>
+public class GetProductByIdQuery(string id) : IRequest<ProductResponse>
 {
-    public string Id { get; set; }
-
-    public GetProductByIdQuery(string id)
-    {
-        Id = id;
-    }
+    public string Id { get; set; } = id;
 }

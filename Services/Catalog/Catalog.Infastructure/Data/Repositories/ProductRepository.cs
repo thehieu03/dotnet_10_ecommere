@@ -3,14 +3,8 @@ using MongoDB.Bson;
 
 namespace Catalog.Infastructure.Data.Repositories;
 
-public class ProductRepository:IProductRepository,IBrandRepository,ITypeRepository
+public class ProductRepository(ICatalogContext catalogContext) : IProductRepository, IBrandRepository, ITypeRepository
 {
-    private readonly ICatalogContext _context;
-
-    public ProductRepository(ICatalogContext catalogContext)
-    {
-        _context = catalogContext;
-    }
     public async Task<Pagination<Product>> GetAllProductsAsync(CatalogSpecParams catalogSpecParams)
     {
         var builder = Builders<Product>.Filter;
@@ -34,7 +28,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
             filter = filter & typeFilter;
         }
         
-        var totalItems = await _context
+        var totalItems = await catalogContext
             .Products
             .CountDocumentsAsync(filter);
 
@@ -67,7 +61,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
             }
         }
 
-        return await _context
+        return await catalogContext
             .Products
             .Find(filter)
             .Sort(sortDefn)
@@ -78,7 +72,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
 
     public async Task<Product> GetProductByIdAsync(string productId)
     {
-        return await _context
+        return await catalogContext
             .Products
             .Find(p=>p.Id==productId)
             .FirstOrDefaultAsync();
@@ -86,7 +80,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
 
     public async Task<IEnumerable<Product>> GetProductByNameAsync(string productName)
     {
-        return await _context
+        return await catalogContext
             .Products
             .Find(p => p.Name.ToLower() == productName.ToLower())
             .ToListAsync();
@@ -94,7 +88,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
 
     public async Task<IEnumerable<Product>> GetProductByBrandAsync(string brandName)
     {
-        return await _context
+        return await catalogContext
             .Products
             .Find(p => p.Brands.Name.ToLower() == brandName.ToLower())
             .ToListAsync();
@@ -102,7 +96,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
 
     public async Task<IEnumerable<Product>> GetProductByTypeAsync(string typeName)
     {
-        return await _context
+        return await catalogContext
             .Products
             .Find(p => p.Types.Name.ToLower() == typeName.ToLower())
             .ToListAsync();
@@ -110,13 +104,13 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
 
     public async Task<Product> CreateProductAsync(Product product)
     {
-        await _context.Products.InsertOneAsync(product);
+        await catalogContext.Products.InsertOneAsync(product);
         return product;
     }
 
     public async Task<bool> UpdateProductAsync(Product product)
     {
-        var updateResult = await _context
+        var updateResult = await catalogContext
             .Products
             .ReplaceOneAsync(p => p.Id == product.Id, product);
         return updateResult.IsAcknowledged && updateResult.ModifiedCount > 0;
@@ -124,7 +118,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
 
     public async Task<bool> DeleteProductAsync(string productId)
     {
-        var deleteResult = await _context
+        var deleteResult = await catalogContext
             .Products
             .DeleteOneAsync(p => p.Id == productId);
         return deleteResult.IsAcknowledged && deleteResult.DeletedCount > 0;
@@ -132,7 +126,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
 
     public async Task<IEnumerable<ProductBrand>> GetAllBrandsAsync()
     {
-        return await _context
+        return await catalogContext
             .ProductBrands
             .Find(_ => true)
             .ToListAsync();
@@ -140,7 +134,7 @@ public class ProductRepository:IProductRepository,IBrandRepository,ITypeReposito
 
     public async Task<IEnumerable<ProductType>> GetTypesAsync()
     {
-        return await _context
+        return await catalogContext
             .ProductTypes
             .Find(_ => true)
             .ToListAsync();

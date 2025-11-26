@@ -1,10 +1,6 @@
 ﻿namespace Catalog.Application.Queries;
 
-public class GetProductByBrandNameQuery:IRequest<IList<ProductResponse>>
+public class GetProductByBrandNameQuery(string brandName) : IRequest<IList<ProductResponse>>
 {
-    public string BrandName { get; set; }
-    public GetProductByBrandNameQuery(string brandName)
-    {
-        BrandName = brandName;
-    }
+    public string BrandName { get; set; } = brandName;
 }

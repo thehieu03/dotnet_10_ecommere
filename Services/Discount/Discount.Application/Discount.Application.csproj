@@ -7,6 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="Protos\discount.proto" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="AutoMapper" Version="12.0.1" />
         <PackageReference Include="Grpc.AspNetCore" Version="2.76.0-pre1" />
         <PackageReference Include="MediatR" Version="14.0.0-beta-1" />
@@ -17,10 +21,16 @@
 
     <ItemGroup>
       <Folder Include="Commands\" />
-      <Folder Include="Handlers\" />
-      <Folder Include="Mapper\" />
-      <Folder Include="Protos\" />
-      <Folder Include="Queries\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Protobuf Include="Protos\discount.proto" GrpcServices="Server" />
+    </ItemGroup>
+	<ItemGroup>
+		<Using Include="AutoMapper"/>
+        <Using Include="Discount.Grpc.Protos"/>
+        <Using Include="Discount.Core.Entities"/>
+        <Using Include="MediatR"/>
+        <Using Include="Discount.Application.Queries"/>
+	</ItemGroup>
 </Project>

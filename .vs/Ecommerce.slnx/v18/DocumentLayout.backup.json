@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\dotnet-10-microservices\\Ecommerce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EEA2B0B5-A97C-2ADC-2682-81F57C505325}|Services\\Discount\\Discount.Application\\Discount.Application.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.application\\discount.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EEA2B0B5-A97C-2ADC-2682-81F57C505325}|Services\\Discount\\Discount.Application\\Discount.Application.csproj|solutionrelative:services\\discount\\discount.application\\discount.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2B0B5-A97C-2ADC-2682-81F57C505325}|Services\\Discount\\Discount.Application\\Discount.Application.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.application\\protos\\discount.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{EEA2B0B5-A97C-2ADC-2682-81F57C505325}|Services\\Discount\\Discount.Application\\Discount.Application.csproj|solutionrelative:services\\discount\\discount.application\\protos\\discount.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9B124ED-6C93-332F-6DF2-23DC11C58826}|Services\\Discount\\Discount.Infrastructure\\Discount.Infrastructure.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.infrastructure\\repositories\\discountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9B124ED-6C93-332F-6DF2-23DC11C58826}|Services\\Discount\\Discount.Infrastructure\\Discount.Infrastructure.csproj|solutionrelative:services\\discount\\discount.infrastructure\\repositories\\discountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|d:\\dotnet-10-microservices\\ecommerce\\docker-compose.override.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
       "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
@@ -35,6 +47,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Discount.Application",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Discount.Application.csproj",
+              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Application\\Discount.Application.csproj",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Discount.Application.csproj*",
+              "RelativeToolTip": "Services\\Discount\\Discount.Application\\Discount.Application.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-26T23:27:50.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "discount.proto",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Protos\\discount.proto",
+              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Application\\Protos\\discount.proto",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Protos\\discount.proto",
+              "RelativeToolTip": "Services\\Discount\\Discount.Application\\Protos\\discount.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2025-11-26T21:33:25.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DiscountRepository.cs",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Infrastructure\\Repositories\\DiscountRepository.cs",
+              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Infrastructure\\Repositories\\DiscountRepository.cs",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Infrastructure\\Repositories\\DiscountRepository.cs",
+              "RelativeToolTip": "Services\\Discount\\Discount.Infrastructure\\Repositories\\DiscountRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T20:11:54.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "docker-compose.override.yml",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.override.yml",
               "RelativeDocumentMoniker": "docker-compose.override.yml",
@@ -42,12 +92,11 @@
               "RelativeToolTip": "docker-compose.override.yml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-11-26T17:43:05.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T17:43:05.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -59,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "docker-compose.dcproj",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.dcproj",
               "RelativeDocumentMoniker": "docker-compose.dcproj",
@@ -67,11 +116,12 @@
               "RelativeToolTip": "docker-compose.dcproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-26T17:42:49.666Z"
+              "WhenOpened": "2025-11-26T17:42:49.666Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ApiController.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.API\\Controllers\\ApiController.cs",
               "RelativeDocumentMoniker": "Services\\Catalog\\Catalog.API\\Controllers\\ApiController.cs",

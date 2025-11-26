@@ -11,13 +11,13 @@ public class UpdateProductCommand(
     decimal price)
     : IRequest<bool>
 {
-    public string Id { get; set; } = id;
-    public string Name { get; set; } = name;
-    public string Summary { get; set; } = summary;
-    public string Description { get; set; } = description;
-    public string ImageFile { get; set; } = imageFile;
-    public ProductBrand Brands { get; set; } = brands;
-    public ProductType Types { get; set; } = types;
-    public decimal Price { get; set; } = price;
+    public string Id { get; } = id;
+    public string Name { get; } = name;
+    public string Summary { get; } = summary;
+    public string Description { get; } = description;
+    public string ImageFile { get; } = imageFile;
+    public ProductBrand Brands { get; } = brands;
+    public ProductType Types { get; } = types;
+    public decimal Price { get; } = price;
 }
 

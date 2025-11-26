@@ -2,5 +2,5 @@
 
 public class GetProductByIdQuery(string id) : IRequest<ProductResponse>
 {
-    public string Id { get; set; } = id;
+    public string Id { get; } = id;
 }

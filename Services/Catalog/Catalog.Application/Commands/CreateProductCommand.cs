@@ -10,11 +10,11 @@ public class CreateProductCommand(
     decimal price)
     : IRequest<ProductResponse>
 {
-    public string Name { get; set; } = name;
-    public string Summary { get; set; } = summary;
-    public string Description { get; set; } = description;
-    public string ImageFile { get; set; } = imageFile;
-    public ProductBrand Brands { get; set; } = brands;
-    public ProductType Types { get; set; } = types;
-    public decimal Price { get; set; } = price;
+    public string Name { get; init; } = name;
+    public string Summary { get; init; } = summary;
+    public string Description { get; init; } = description;
+    public string ImageFile { get; init; } = imageFile;
+    public ProductBrand Brands { get; init; } = brands;
+    public ProductType Types { get; init; } = types;
+    public decimal Price { get; init; } = price;
 }

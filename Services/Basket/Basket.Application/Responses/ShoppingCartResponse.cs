@@ -2,8 +2,8 @@
 
 public class ShoppingCartResponse
 {
-    public string UserName { get; set; }
-    public List<ShoppingCartItemResponse> Items { get; set; }
+    public string UserName { get; init; }
+    public List<ShoppingCartItemResponse> Items { get; init; }
 
     public ShoppingCartResponse(string username)
     {

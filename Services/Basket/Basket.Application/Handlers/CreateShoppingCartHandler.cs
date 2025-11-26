@@ -3,7 +3,7 @@
 public class CreateShoppingCartHandler(IBasketRepository basketRepository)
     : IRequestHandler<CreateShoppingCartCommand, ShoppingCartResponse>
 {
-    public IBasketRepository BasketRepository { get; set; } = basketRepository;
+    private IBasketRepository BasketRepository { get; set; } = basketRepository;
 
     public async Task<ShoppingCartResponse> Handle(CreateShoppingCartCommand request, CancellationToken cancellationToken)
     {

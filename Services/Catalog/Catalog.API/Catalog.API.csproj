@@ -31,6 +31,10 @@
     <Using Include="Microsoft.AspNetCore.Mvc"/>
     <Using Include="Asp.Versioning"/>
     <Using Include="MediatR"/>
+    <Using Include="Catalog.Application.Responses"/>
+    <Using Include="Catalog.Application.Queries"/>
+    <Using Include="Catalog.Application.Commands"/>
+    <Using Include="System.Net"/>
   </ItemGroup>
 
 </Project>

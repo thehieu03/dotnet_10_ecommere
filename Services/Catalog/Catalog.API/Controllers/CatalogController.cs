@@ -1,9 +1,4 @@
-﻿using System.Net;
-using Catalog.Application.Commands;
-using Catalog.Application.Queries;
-using Catalog.Application.Responses;
-
-namespace Catalog.API.Controllers;
+﻿namespace Catalog.API.Controllers;
 
 public class CatalogController:ApiController
 {
@@ -63,13 +58,13 @@ public class CatalogController:ApiController
     }
     [HttpGet]
     [Route("[action]/{brandName}", Name = "GetAllProductByBrandName")]
-    [ProducesResponseType(typeof(IList<TypesResponse>), (int)HttpStatusCode.OK)]
+    [ProducesResponseType(typeof(IList<ProductResponse>), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.NotFound)]
-    public async Task<ActionResult<IList<TypesResponse>>> GetAllProductByBrandName(string brandName)
+    public async Task<ActionResult<IList<ProductResponse>>> GetAllProductByBrandName(string brandName)
     {
         var query = new GetProductByBrandNameQuery(brandName);
         var result = await _mediator.Send(query);
-        return result==null ? NotFound() : Ok(result);
+        return result==null || result.Count == 0 ? NotFound() : Ok(result);
     }
     [HttpPost]
     [Route("CreateProduct")]

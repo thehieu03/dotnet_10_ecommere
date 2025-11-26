@@ -15,5 +15,14 @@
       <PackageReference Include="Grpc.AspNetCore" Version="2.76.0-pre1" />
       <PackageReference Include="Npgsql" Version="10.0.0" />
     </ItemGroup>
-
+    <ItemGroup>
+        <Using Include="Microsoft.Extensions.Hosting"/>
+        <Using Include="Npgsql"/>
+        <Using Include="Microsoft.Extensions.Configuration"/>
+        <Using Include="Discount.Core.Repositories"/>
+        <Using Include="Discount.Core.Entities"/>
+        <Using Include="Dapper"/>
+        <Using Include="Microsoft.Extensions.Logging"/>
+        <Using Include="Microsoft.Extensions.DependencyInjection"/>
+    </ItemGroup>
 </Project>

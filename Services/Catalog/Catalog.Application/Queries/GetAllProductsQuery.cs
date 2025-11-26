@@ -1,6 +1,13 @@
-﻿namespace Catalog.Application.Queries;
+﻿using Catalog.Core.Specs;
 
-public class GetAllProductsQuery:IRequest<IList<ProductResponse>>
+namespace Catalog.Application.Queries;
+
+public class GetAllProductsQuery:IRequest<Pagination<ProductResponse>>
 {
-    
+    public readonly CatalogSpecParams CatalogSpecParams;
+
+    public GetAllProductsQuery(CatalogSpecParams catalogSpecParams)
+    {
+        CatalogSpecParams = catalogSpecParams;
+    }
 }

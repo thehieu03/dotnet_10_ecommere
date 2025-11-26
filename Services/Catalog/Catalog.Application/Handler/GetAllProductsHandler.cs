@@ -1,6 +1,8 @@
-﻿namespace Catalog.Application.Handler;
+﻿using Catalog.Core.Specs;
 
-public class GetAllProductsHandler: IRequestHandler<GetAllProductsQuery, IList<ProductResponse>>
+namespace Catalog.Application.Handler;
+
+public class GetAllProductsHandler: IRequestHandler<GetAllProductsQuery,Pagination<ProductResponse>>
 {
     private readonly IProductRepository _repository;
 
@@ -8,10 +10,10 @@ public class GetAllProductsHandler: IRequestHandler<GetAllProductsQuery, IList<P
     {
         _repository = repository;
     }
-    public async Task<IList<ProductResponse>> Handle(GetAllProductsQuery request, CancellationToken cancellationToken)
+    public async Task<Pagination<ProductResponse>> Handle(GetAllProductsQuery request, CancellationToken cancellationToken)
     {
-        var productList = await _repository.GetAllProductsAsync();
-        var productResponses = ProductMapper.Mapper.Map<IList<Product>, IList<ProductResponse>>(productList.ToList());
+        var productList = await _repository.GetAllProductsAsync(request.CatalogSpecParams);
+        var productResponses = ProductMapper.Mapper.Map<Pagination<Product>, Pagination<ProductResponse>>(productList);
         return productResponses;
     }
 }

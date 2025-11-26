@@ -5,6 +5,7 @@ global using Catalog.Application.Handler;
 global using Catalog.Application.Queries;
 global using Catalog.Application.Responses;
 global using Catalog.Core.Repositories;
+global using Catalog.Core.Specs;
 global using Catalog.Infastructure.Data;
 global using Catalog.Infastructure.Data.Repositories;
 global using MediatR;

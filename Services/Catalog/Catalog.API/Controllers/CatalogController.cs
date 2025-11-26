@@ -31,10 +31,10 @@ public class CatalogController:ApiController
 
     [HttpGet]
     [Route("GetAllProducts", Name = "GetAllProducts")]
-    [ProducesResponseType(typeof(IList<ProductResponse>), (int)HttpStatusCode.OK)]
-    public async Task<ActionResult<IList<ProductResponse>>> GetAllProductsAsync()
+    [ProducesResponseType(typeof(Pagination<ProductResponse>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IList<ProductResponse>>> GetAllProductsAsync([FromQuery] CatalogSpecParams catalogSpecParams)
     {
-        var query = new GetAllProductsQuery();
+        var query = new GetAllProductsQuery(catalogSpecParams);
         var result = await _mediator.Send(query);
         return Ok(result);
     }

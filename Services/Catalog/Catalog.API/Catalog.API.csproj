@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,18 +24,18 @@
     <ProjectReference Include="..\Catalog.Infastructure\Catalog.Infastructure.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Using Include="Microsoft.OpenApi"/>
-    <Using Include="Catalog.Infastructure.Data.Repositories"/>
-    <Using Include="Catalog.Infastructure.Data"/>
-    <Using Include="Catalog.Core.Repositories"/>
-    <Using Include="System.Reflection"/>
-    <Using Include="Microsoft.AspNetCore.Mvc"/>
-    <Using Include="Asp.Versioning"/>
-    <Using Include="MediatR"/>
-    <Using Include="Catalog.Application.Responses"/>
-    <Using Include="Catalog.Application.Queries"/>
-    <Using Include="Catalog.Application.Commands"/>
-    <Using Include="System.Net"/>
+    <Using Include="Microsoft.OpenApi" />
+    <Using Include="Catalog.Infastructure.Data.Repositories" />
+    <Using Include="Catalog.Infastructure.Data" />
+    <Using Include="Catalog.Core.Repositories" />
+    <Using Include="System.Reflection" />
+    <Using Include="Microsoft.AspNetCore.Mvc" />
+    <Using Include="Asp.Versioning" />
+    <Using Include="MediatR" />
+    <Using Include="Catalog.Application.Responses" />
+    <Using Include="Catalog.Application.Queries" />
+    <Using Include="Catalog.Application.Commands" />
+    <Using Include="System.Net" />
   </ItemGroup>
 
 </Project>

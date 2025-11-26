@@ -6,4 +6,8 @@
     <Project Path="Services/Catalog/Catalog.Core/Catalog.Core.csproj" />
     <Project Path="Services/Catalog/Catalog.Infastructure/Catalog.Infastructure.csproj" />
   </Folder>
+  <Folder Name="/Solution Items/" />
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
 </Solution>

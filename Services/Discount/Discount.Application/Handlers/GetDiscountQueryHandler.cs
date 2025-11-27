@@ -1,15 +1,10 @@
-﻿using Discount.Core.Repositories;
-using Grpc.Core;
-
-namespace Discount.Application.Handlers;
+﻿namespace Discount.Application.Handlers;
 
 public class GetDiscountQueryHandler(IDiscountRepository repository) : IRequestHandler<GetDiscountQuery, CouponModel>
 {
-    private readonly IDiscountRepository _repository = repository;
-
     public async Task<CouponModel> Handle(GetDiscountQuery request, CancellationToken cancellationToken)
     {
-        var coupon = await _repository.GetDiscountAsync(request.ProductName);
+        var coupon = await repository.GetDiscountAsync(request.ProductName);
         if (coupon == null)
         {
             throw new RpcException(new Status(StatusCode.NotFound,

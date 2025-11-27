@@ -1,8 +1,11 @@
-﻿namespace Basket.API.Controller;
+﻿using Basket.Application.GrpcService;
+
+namespace Basket.API.Controller;
 [ApiVersion("1.0")]
-public class BasketController(IMediator mediator) : ApiController
+public class BasketController(IMediator mediator,DiscountGrpcService discountGrpcService) : ApiController
 {
     IMediator _mediator { get; } = mediator;
+    DiscountGrpcService _discountGrpcService { get; } = discountGrpcService;
 
     [HttpGet]
     [Route("[action]/{userName}", Name = "GetBasketByUserName")]
@@ -18,6 +21,11 @@ public class BasketController(IMediator mediator) : ApiController
     [ProducesResponseType(typeof(ShoppingCartResponse), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<ShoppingCartResponse>> UpdateBasket([FromBody] CreateShoppingCartCommand command)
     {
+        foreach (var item in command.ShoppingCartItems)
+        {
+            var coupon = await _discountGrpcService.GetDiscount(item.ProductName);
+            item.Price -= coupon.Amount;
+        }
         var result = await _mediator.Send(command);
         return Ok(result);
     }

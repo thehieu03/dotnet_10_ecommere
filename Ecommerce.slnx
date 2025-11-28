@@ -9,7 +9,6 @@
   <Folder Name="/Services/Catalog/">
     <Project Path="Services/Catalog/Catalog.API/Catalog.API.csproj" />
     <Project Path="Services/Catalog/Catalog.Application/Catalog.Application.csproj" />
-    <Project Path="Services/Catalog/Catalog.Core/Catalog.Core.csproj" />
     <Project Path="Services/Catalog/Catalog.Infastructure/Catalog.Infastructure.csproj" />
   </Folder>
   <Folder Name="/Services/Discount/">
@@ -21,8 +20,6 @@
   <Folder Name="/Services/Ordering/">
     <Project Path="Services/Ordering/Ordering.API/Ordering.API.csproj" />
     <Project Path="Services/Ordering/Ordering.Application/Ordering.Application.csproj" />
-    <Project Path="Services/Ordering/Ordering.Core/Ordering.Core.csproj" />
-    <Project Path="Services/Ordering/Ordering.Infastructure/Ordering.Infastructure.csproj" />
   </Folder>
   <Folder Name="/Solution Items/" />
   <Project Path="docker-compose.dcproj">

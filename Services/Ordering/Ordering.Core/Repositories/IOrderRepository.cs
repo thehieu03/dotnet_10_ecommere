@@ -1,6 +1,9 @@
-﻿namespace Ordering.Core.Repositories;
+﻿using Ordering.Core.Entities;
 
-public class IOrderRepository
+namespace Ordering.Core.Repositories;
+
+public interface IOrderRepository:IAsyncRepository<Order>
 {
+    Task<IEnumerable<Order>> GetOrderByUserName(string username);
     
 }

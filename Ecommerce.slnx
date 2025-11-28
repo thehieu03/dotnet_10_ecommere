@@ -22,7 +22,7 @@
     <Project Path="Services/Ordering/Ordering.API/Ordering.API.csproj" />
     <Project Path="Services/Ordering/Ordering.Application/Ordering.Application.csproj" />
     <Project Path="Services/Ordering/Ordering.Core/Ordering.Core.csproj" />
-    <Project Path="Services/Ordering/Ordering.Infastructure/Ordering.Infastructure.csproj" />
+    <Project Path="Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/Solution Items/" />
   <Project Path="docker-compose.dcproj">

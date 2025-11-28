@@ -6,4 +6,18 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Common\" />
+      <Folder Include="Entities\" />
+    </ItemGroup>
+    
+    <!-- Implicit Usings - Tự động import các namespace này -->
+    <ItemGroup>
+      <Using Include="System" />
+      <Using Include="System.Collections.Generic" />
+      <Using Include="System.Linq" />
+      <Using Include="System.Threading.Tasks" />
+      <Using Include="System.ComponentModel.DataAnnotations" />
+    </ItemGroup>
+
 </Project>

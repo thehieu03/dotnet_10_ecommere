@@ -1,7 +1,5 @@
-using Microsoft.OpenApi;
 using Ordering.API.Extensions;
 using Ordering.Application.Extensions;
-using Ordering.Core.Entities;
 using Ordering.Infrastructure.Data;
 using Ordering.Infrastructure.Extensions;
 

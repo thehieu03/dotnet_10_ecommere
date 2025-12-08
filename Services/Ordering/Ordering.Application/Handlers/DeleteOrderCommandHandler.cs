@@ -7,7 +7,9 @@ using Ordering.Core.Repositories;
 
 namespace Ordering.Application.Handlers;
 
-public class DeleteOrderCommandHandler(IOrderRepository orderRepository, ILogger logger) : IRequestHandler<DeleteOrderCommand, Unit>
+public class DeleteOrderCommandHandler(
+    IOrderRepository orderRepository,
+    ILogger<DeleteOrderCommandHandler> logger) : IRequestHandler<DeleteOrderCommand, Unit>
 {
     public async Task<Unit> Handle(DeleteOrderCommand request, CancellationToken cancellationToken)
     {
@@ -16,8 +18,9 @@ public class DeleteOrderCommandHandler(IOrderRepository orderRepository, ILogger
         {
             throw new OrderNotFoundException(nameof(Order), request.OrderId);
         }
+
         await orderRepository.DeleteAsync(orderToDelete);
-        logger.LogInformation($"Order with {request.OrderId} was deleted.");
+        logger.LogInformation("Order with {OrderId} was deleted.", request.OrderId);
         return Unit.Value;
     }
 }

@@ -1,40 +1,59 @@
 services:
+  # =========================
+  # Database services
+  # =========================
+  catalog.db:
+    image: mongo
+
+  basket.db:
+    image: redis:alpine
+
+  discount.db:
+    image: postgres:alpine
+
+  orderdb:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+
+  # =========================
+  # API services
+  # =========================
   catalog.api:
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
       dockerfile: Services/Catalog/Catalog.API/Dockerfile
-      
-  catalog.db:
-    image: mongo
-    
-  basket.db:
-    image: redis:alpine
-    
+
   basket.api:
     image: ${DOCKER_REGISTRY-}basketapi
     build:
       context: .
       dockerfile: Services/Basket/Basket.API/Dockerfile
-      
-  portainer:
-    image: portainer/portainer-ce
-  pgadmin:
-    image: dpage/pgadmin4
-    
-    
+
   discount.api:
     image: ${DOCKER_REGISTRY-}discountapi
     build:
       context: .
       dockerfile: Services/Discount/Discount.Api/Dockerfile
 
-  discount.db:
-    image: postgres:alpine
+  ordering.api:
+    image: ${DOCKER_REGISTRY-}orderingapi
+    build:
+      context: .
+      dockerfile: Services/Ordering/Ordering.API/Dockerfile
+
+  # =========================
+  # Utility services
+  # =========================
+  portainer:
+    image: portainer/portainer-ce
+
+  pgadmin:
+    image: dpage/pgadmin4
 
 volumes:
   mongo_data:
-  portainer_data:  
+  portainer_data:
   postgres_data:
   pgadmin_data:
+  orderdb_data:
 

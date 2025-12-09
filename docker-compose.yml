@@ -1,59 +1,52 @@
 services:
-  # =========================
-  # Database services
-  # =========================
   catalog.db:
     image: mongo
-
+    container_name: catalog_db
   basket.db:
     image: redis:alpine
-
+    container_name: basket_db
   discount.db:
     image: postgres:alpine
-
-  orderdb:
+    container_name: discount_db
+  order_db:
     image: mcr.microsoft.com/mssql/server:2022-latest
-
-  # =========================
-  # API services
-  # =========================
-  catalog.api:
-    image: ${DOCKER_REGISTRY-}catalogapi
+    container_name: order_db
+  catalog_api:
+    image: ${DOCKER_REGISTRY-}catalog_api
+    container_name: catalog_api
     build:
       context: .
       dockerfile: Services/Catalog/Catalog.API/Dockerfile
-
-  basket.api:
-    image: ${DOCKER_REGISTRY-}basketapi
+  basket_api:
+    image: ${DOCKER_REGISTRY-}basket_api
+    container_name: basket_api
     build:
       context: .
       dockerfile: Services/Basket/Basket.API/Dockerfile
-
-  discount.api:
-    image: ${DOCKER_REGISTRY-}discountapi
+  discount_api:
+    image: ${DOCKER_REGISTRY-}discount_api
+    container_name: discount_api
     build:
       context: .
       dockerfile: Services/Discount/Discount.Api/Dockerfile
-
-  ordering.api:
-    image: ${DOCKER_REGISTRY-}orderingapi
+  ordering_api:
+    image: ${DOCKER_REGISTRY-}ordering_api
+    container_name: ordering_api
     build:
       context: .
       dockerfile: Services/Ordering/Ordering.API/Dockerfile
-
-  # =========================
-  # Utility services
-  # =========================
-  portainer:
+  Portainer:
     image: portainer/portainer-ce
+    container_name: Portainer
 
-  pgadmin:
+  pg_admin:
     image: dpage/pgadmin4
+    container_name: pg_admin
 
 volumes:
   mongo_data:
   portainer_data:
   postgres_data:
   pgadmin_data:
-  orderdb_data:
+  order_db_data:
 

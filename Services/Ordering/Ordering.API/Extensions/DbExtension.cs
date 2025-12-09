@@ -8,30 +8,28 @@ public static class DbExtension
 {
     public static IHost MigrateDatabase<TContext>(this IHost host, Action<TContext, IServiceProvider> seeder) where TContext : DbContext
     {
-        using (var scope = host.Services.CreateScope())
+        using var scope = host.Services.CreateScope();
+        var services = scope.ServiceProvider;
+        var logger = services.GetRequiredService<ILogger<TContext>>();
+        var context = services.GetService<TContext>();
+        try
         {
-            var services = scope.ServiceProvider;
-            var logger = services.GetRequiredService<ILogger<TContext>>();
-            var context = services.GetService<TContext>();
-            try
-            {
-                logger.LogInformation($"Started Db Migration: {typeof(TContext).Name}");
-                var retry = Policy.Handle<SqlException>()
-                    .WaitAndRetry(
-                        retryCount: 5,
-                        sleepDurationProvider: retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
-                        onRetry: (exception, timeSpan, retry) =>
-                        {
-                            logger.LogError($"Retrying because of {exception} {timeSpan} {retry}");
-                        }
-                    );
-                retry.Execute(() => CallSeeder(seeder,context,services));
-                logger.LogInformation($"Migration Completed: {typeof(TContext).Name})");
-            }
-            catch (Exception e)
-            {
-                logger.LogError(e, $"An error occurred while migrating db: {typeof(TContext).Name})");
-            }
+            logger.LogInformation("Started Db Migration: {Name}", typeof(TContext).Name);
+            var retry = Policy.Handle<SqlException>()
+                .WaitAndRetry(
+                    retryCount: 5,
+                    sleepDurationProvider: retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
+                    onRetry: (exception, timeSpan, retry) =>
+                    {
+                        logger.LogError($"Retrying because of {exception} {timeSpan} {retry}");
+                    }
+                );
+            retry.Execute(() => CallSeeder(seeder, context, services));
+            logger.LogInformation($"Migration Completed: {typeof(TContext).Name})");
+        }
+        catch (Exception e)
+        {
+            logger.LogError(e, $"An error occurred while migrating db: {typeof(TContext).Name})");
         }
         return host;
     }

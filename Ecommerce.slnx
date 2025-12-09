@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Infrastructure/EventBus.Messages/EventBus.Messages.csproj" />
+  </Folder>
   <Folder Name="/Services/" />
   <Folder Name="/Services/Basket/">
     <Project Path="Services/Basket/Basket.API/Basket.API.csproj" />
@@ -24,7 +27,6 @@
     <Project Path="Services/Ordering/Ordering.Core/Ordering.Core.csproj" />
     <Project Path="Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" />
   </Folder>
-  <Folder Name="/Solution Items/" />
   <Project Path="docker-compose.dcproj">
     <Build />
   </Project>

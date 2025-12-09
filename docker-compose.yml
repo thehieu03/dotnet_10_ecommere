@@ -11,6 +11,9 @@ services:
   order_db:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: order_db
+  rabbit_mq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitMQ
   catalog_api:
     image: ${DOCKER_REGISTRY-}catalog_api
     container_name: catalog_api
@@ -49,4 +52,5 @@ volumes:
   postgres_data:
   pgadmin_data:
   order_db_data:
+  rabbitmq_data:
 

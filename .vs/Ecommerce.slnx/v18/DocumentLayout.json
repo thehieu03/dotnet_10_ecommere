@@ -103,7 +103,7 @@
               "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.API\\Extensions\\DbExtension.cs",
               "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\Extensions\\DbExtension.cs",
               "RelativeToolTip": "Services\\Ordering\\Ordering.API\\Extensions\\DbExtension.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBcAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T00:49:32.431Z",
               "EditorCaption": ""
@@ -118,8 +118,7 @@
               "RelativeToolTip": "Services\\Ordering\\Ordering.Application\\Behaviour\\UnhandledExceptionBehaviour.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T00:48:17.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T00:48:17.426Z"
             },
             {
               "$type": "Document",
@@ -167,8 +166,7 @@
               "RelativeToolTip": "docker-compose.yml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-11-27T21:37:16.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T21:37:16.305Z"
             },
             {
               "$type": "Document",
@@ -180,8 +178,7 @@
               "RelativeToolTip": "docker-compose.override.yml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-11-27T21:37:34.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T21:37:34.442Z"
             },
             {
               "$type": "Document",

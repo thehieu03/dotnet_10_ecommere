@@ -1,5 +1,6 @@
 using Basket.Application.GrpcService;
 using Discount.Grpc.Protos;
+using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -16,7 +17,7 @@ builder.Services.AddEndpointsApiExplorer();
 // Configure Swagger generation
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1",new OpenApiInfo()
+    c.SwaggerDoc("v1", new OpenApiInfo()
     {
         Title = "Basket API",
         Version = "v1",
@@ -28,8 +29,7 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 // Add MediatR
 var assemblies = new Assembly[]
 {
-    Assembly.GetExecutingAssembly(),
-    typeof(CreateShoppingCartHandler).Assembly,
+    Assembly.GetExecutingAssembly(), typeof(CreateShoppingCartHandler).Assembly,
 };
 builder.Services.AddMediatR(cfg => { cfg.RegisterServicesFromAssemblies(assemblies); });
 // Add Redis Cache
@@ -37,6 +37,11 @@ builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration.GetValue<string>("CacheSettings:ConnectionString");
 });
+builder.Services.AddMassTransit(configure =>
+{
+    configure.UsingRabbitMq((ct, cfg) => { cfg.Host(builder.Configuration["EventBusSettings:HostAddress"]); });
+});
+builder.Services.AddMassTransitHostedService();
 // Application Services
 builder.Services.AddScoped<IBasketRepository, BaskRepository>();
 builder.Services.AddScoped<DiscountGrpcService>();
@@ -60,4 +65,3 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.MapControllers();
 app.Run();
-

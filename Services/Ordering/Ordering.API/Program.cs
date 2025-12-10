@@ -1,3 +1,5 @@
+using MassTransit;
+using Ordering.API.EventBusConsumer;
 using Ordering.API.Extensions;
 using Ordering.Application.Extensions;
 using Ordering.Infrastructure.Data;
@@ -30,12 +32,21 @@ builder.Services.AddSwaggerGen(c =>
         Description = "Ordering Service API"
     });
 });
+// Mass Transit
+builder.Services.AddMassTransit(config =>
+{
+    // Mark this a consumer
+    config.AddConsumer<BasketOrderingConsumer>();
+});
 // Apply db Migrations
 
 // Application Services
 builder.Services.AddApplicationServices();
 // Infra services
 builder.Services.AddInfraServices(builder.Configuration);
+// Consumer class
+builder.Services.AddScoped<BasketOrderingConsumer>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

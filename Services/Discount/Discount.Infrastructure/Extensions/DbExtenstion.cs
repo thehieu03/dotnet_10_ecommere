@@ -4,22 +4,20 @@ public static class DbExtenstion
 {
     public static IHost MigrateDatabase<TContext>(this IHost host)
     {
-        using (var scope = host.Services.CreateScope())
+        using var scope = host.Services.CreateScope();
+        var services = scope.ServiceProvider;
+        var config= services.GetRequiredService<IConfiguration>();
+        var logger=services.GetRequiredService<ILogger<TContext>>();
+        try
         {
-            var services = scope.ServiceProvider;
-            var config= services.GetRequiredService<IConfiguration>();
-            var logger=services.GetRequiredService<ILogger<TContext>>();
-            try
-            {
-                logger.LogInformation("Discount Db Migration Started");
-                ApplyMigrations(config);
-                logger.LogInformation("Discount Db Migration Completed");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
+            logger.LogInformation("Discount Db Migration Started");
+            ApplyMigrations(config);
+            logger.LogInformation("Discount Db Migration Completed");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
         }
         return host;
     }

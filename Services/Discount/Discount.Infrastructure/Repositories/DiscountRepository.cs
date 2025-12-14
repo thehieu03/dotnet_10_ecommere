@@ -7,7 +7,7 @@ public class DiscountRepository(IConfiguration configuration) : IDiscountReposit
         await using var connection =
             new NpgsqlConnection(configuration.GetValue<string>("DatabaseSettings:ConnectionString") ??
                                  throw new InvalidOperationException());
-        var coupon = await connection.QueryFirstAsync<Coupon>
+        var coupon = await connection.QueryFirstOrDefaultAsync<Coupon>
             ("SELECT * FROM Coupon WHERE ProductName=@ProductName", new { ProductName = productName });
         if (coupon == null)
         {

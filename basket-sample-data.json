@@ -1,0 +1,27 @@
+{
+  "userName": "hieu",
+  "shoppingCartItems": [
+    {
+      "quantity": 2,
+      "price": 89.99,
+      "productId": "64f0c900c8d4f01a1a200001",
+      "imageFile": "images/product/adidas_1.png",
+      "productName": "Adidas CourtFlash 1"
+    },
+    {
+      "quantity": 1,
+      "price": 130.00,
+      "productId": "64f0c900c8d4f01a1a200016",
+      "imageFile": "images/product/nike_1.png",
+      "productName": "Nike StrikeFlow 1"
+    },
+    {
+      "quantity": 3,
+      "price": 118.50,
+      "productId": "64f0c900c8d4f01a1a200014",
+      "imageFile": "images/product/puma_2.png",
+      "productName": "Puma SpeedKick 2"
+    }
+  ]
+}
+

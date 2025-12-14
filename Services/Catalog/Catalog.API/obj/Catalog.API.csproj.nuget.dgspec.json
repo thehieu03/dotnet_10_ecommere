@@ -50,33 +50,21 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
-            "Microsoft.Extensions.Configuration.Binder": {
+            "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[10.0.0, )"
             },
-            "Microsoft.Extensions.Hosting.Abstractions": {
+            "Serilog.Enrichers.Environment": {
               "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Serilog": {
-              "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[3.0.1, )"
             },
             "Serilog.Exceptions": {
               "target": "Package",
               "version": "[8.4.0, )"
             },
-            "Serilog.Extensions.Hosting": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
             "Serilog.Sinks.Console": {
               "target": "Package",
-              "version": "[6.0.0, )"
-            },
-            "Serilog.Sinks.Elasticsearch": {
-              "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[6.1.1, )"
             }
           },
           "imports": [

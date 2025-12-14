@@ -3,103 +3,28 @@
   "WorkspaceRootPath": "D:\\dotnet-10-microservices\\Ecommerce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ECA4CD42-6A99-ABF5-1A63-44B7AC8CE0F0}|Infrastructure\\Common.Logging\\Common.Logging.csproj|d:\\dotnet-10-microservices\\ecommerce\\infrastructure\\common.logging\\common.logging.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ECA4CD42-6A99-ABF5-1A63-44B7AC8CE0F0}|Infrastructure\\Common.Logging\\Common.Logging.csproj|solutionrelative:infrastructure\\common.logging\\common.logging.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18CBF71-D1A1-6332-2E48-B7E2DBC30EA5}|Services\\Ordering\\Ordering.API\\Ordering.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\ordering\\ordering.api\\ordering.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F18CBF71-D1A1-6332-2E48-B7E2DBC30EA5}|Services\\Ordering\\Ordering.API\\Ordering.API.csproj|solutionrelative:services\\ordering\\ordering.api\\ordering.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0711E00D-DB32-77AE-6AE3-CA25496CD1AE}|Services\\Discount\\Discount.Api\\Discount.Api.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.api\\discount.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0711E00D-DB32-77AE-6AE3-CA25496CD1AE}|Services\\Discount\\Discount.Api\\Discount.Api.csproj|solutionrelative:services\\discount\\discount.api\\discount.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FC5A32-CDDC-EE43-9CA6-483EA2BFBE99}|Services\\Catalog\\Catalog.API\\Catalog.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\catalog\\catalog.api\\catalog.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{33FC5A32-CDDC-EE43-9CA6-483EA2BFBE99}|Services\\Catalog\\Catalog.API\\Catalog.API.csproj|solutionrelative:services\\catalog\\catalog.api\\catalog.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\basket\\basket.api\\basket.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|solutionrelative:services\\basket\\basket.api\\basket.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\basket\\basket.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|solutionrelative:services\\basket\\basket.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18CBF71-D1A1-6332-2E48-B7E2DBC30EA5}|Services\\Ordering\\Ordering.API\\Ordering.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\ordering\\ordering.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F18CBF71-D1A1-6332-2E48-B7E2DBC30EA5}|Services\\Ordering\\Ordering.API\\Ordering.API.csproj|solutionrelative:services\\ordering\\ordering.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|d:\\dotnet-10-microservices\\ecommerce\\docker-compose.override.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18CBF71-D1A1-6332-2E48-B7E2DBC30EA5}|Services\\Ordering\\Ordering.API\\Ordering.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\ordering\\ordering.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F18CBF71-D1A1-6332-2E48-B7E2DBC30EA5}|Services\\Ordering\\Ordering.API\\Ordering.API.csproj|solutionrelative:services\\ordering\\ordering.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\basket\\basket.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|solutionrelative:services\\basket\\basket.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|d:\\dotnet-10-microservices\\ecommerce\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18CBF71-D1A1-6332-2E48-B7E2DBC30EA5}|Services\\Ordering\\Ordering.API\\Ordering.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\ordering\\ordering.api\\extensions\\dbextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F18CBF71-D1A1-6332-2E48-B7E2DBC30EA5}|Services\\Ordering\\Ordering.API\\Ordering.API.csproj|solutionrelative:services\\ordering\\ordering.api\\extensions\\dbextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E8AD615-B886-71E4-A850-80B639B79D24}|Services\\Ordering\\Ordering.Application\\Ordering.Application.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\ordering\\ordering.application\\behaviour\\unhandledexceptionbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E8AD615-B886-71E4-A850-80B639B79D24}|Services\\Ordering\\Ordering.Application\\Ordering.Application.csproj|solutionrelative:services\\ordering\\ordering.application\\behaviour\\unhandledexceptionbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D6331C5-72A6-DEFA-2B59-5F115C5D739E}|Services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\ordering\\ordering.infrastructure\\data\\ordercontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D6331C5-72A6-DEFA-2B59-5F115C5D739E}|Services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:services\\ordering\\ordering.infrastructure\\data\\ordercontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3506E45-161D-66A1-A844-B13702A1FB95}|Services\\Basket\\Basket.Application\\Basket.Application.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\basket\\basket.application\\handlers\\createshoppingcarthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3506E45-161D-66A1-A844-B13702A1FB95}|Services\\Basket\\Basket.Application\\Basket.Application.csproj|solutionrelative:services\\basket\\basket.application\\handlers\\createshoppingcarthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3506E45-161D-66A1-A844-B13702A1FB95}|Services\\Basket\\Basket.Application\\Basket.Application.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\basket\\basket.application\\grpcservice\\discountgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3506E45-161D-66A1-A844-B13702A1FB95}|Services\\Basket\\Basket.Application\\Basket.Application.csproj|solutionrelative:services\\basket\\basket.application\\grpcservice\\discountgrpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3506E45-161D-66A1-A844-B13702A1FB95}|Services\\Basket\\Basket.Application\\Basket.Application.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\basket\\basket.application\\basket.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F3506E45-161D-66A1-A844-B13702A1FB95}|Services\\Basket\\Basket.Application\\Basket.Application.csproj|solutionrelative:services\\basket\\basket.application\\basket.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9B124ED-6C93-332F-6DF2-23DC11C58826}|Services\\Discount\\Discount.Infrastructure\\Discount.Infrastructure.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.infrastructure\\discount.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C9B124ED-6C93-332F-6DF2-23DC11C58826}|Services\\Discount\\Discount.Infrastructure\\Discount.Infrastructure.csproj|solutionrelative:services\\discount\\discount.infrastructure\\discount.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEA2B0B5-A97C-2ADC-2682-81F57C505325}|Services\\Discount\\Discount.Application\\Discount.Application.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.application\\discount.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EEA2B0B5-A97C-2ADC-2682-81F57C505325}|Services\\Discount\\Discount.Application\\Discount.Application.csproj|solutionrelative:services\\discount\\discount.application\\discount.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0711E00D-DB32-77AE-6AE3-CA25496CD1AE}|Services\\Discount\\Discount.Api\\Discount.Api.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.api\\services\\discountservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0711E00D-DB32-77AE-6AE3-CA25496CD1AE}|Services\\Discount\\Discount.Api\\Discount.Api.csproj|solutionrelative:services\\discount\\discount.api\\services\\discountservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0711E00D-DB32-77AE-6AE3-CA25496CD1AE}|Services\\Discount\\Discount.Api\\Discount.Api.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0711E00D-DB32-77AE-6AE3-CA25496CD1AE}|Services\\Discount\\Discount.Api\\Discount.Api.csproj|solutionrelative:services\\discount\\discount.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0711E00D-DB32-77AE-6AE3-CA25496CD1AE}|Services\\Discount\\Discount.Api\\Discount.Api.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0711E00D-DB32-77AE-6AE3-CA25496CD1AE}|Services\\Discount\\Discount.Api\\Discount.Api.csproj|solutionrelative:services\\discount\\discount.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FC5A32-CDDC-EE43-9CA6-483EA2BFBE99}|Services\\Catalog\\Catalog.API\\Catalog.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\catalog\\catalog.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{33FC5A32-CDDC-EE43-9CA6-483EA2BFBE99}|Services\\Catalog\\Catalog.API\\Catalog.API.csproj|solutionrelative:services\\catalog\\catalog.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEA2B0B5-A97C-2ADC-2682-81F57C505325}|Services\\Discount\\Discount.Application\\Discount.Application.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.application\\handlers\\getdiscountqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEA2B0B5-A97C-2ADC-2682-81F57C505325}|Services\\Discount\\Discount.Application\\Discount.Application.csproj|solutionrelative:services\\discount\\discount.application\\handlers\\getdiscountqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22899BDA-D316-32D2-0241-F339819F27BC}|Services\\Discount\\Discount.Core\\Discount.Core.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.core\\repositories\\idiscountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22899BDA-D316-32D2-0241-F339819F27BC}|Services\\Discount\\Discount.Core\\Discount.Core.csproj|solutionrelative:services\\discount\\discount.core\\repositories\\idiscountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEA2B0B5-A97C-2ADC-2682-81F57C505325}|Services\\Discount\\Discount.Application\\Discount.Application.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.application\\mapper\\discountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEA2B0B5-A97C-2ADC-2682-81F57C505325}|Services\\Discount\\Discount.Application\\Discount.Application.csproj|solutionrelative:services\\discount\\discount.application\\mapper\\discountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|d:\\dotnet-10-microservices\\ecommerce\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FC5A32-CDDC-EE43-9CA6-483EA2BFBE99}|Services\\Catalog\\Catalog.API\\Catalog.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\catalog\\catalog.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FC5A32-CDDC-EE43-9CA6-483EA2BFBE99}|Services\\Catalog\\Catalog.API\\Catalog.API.csproj|solutionrelative:services\\catalog\\catalog.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0711E00D-DB32-77AE-6AE3-CA25496CD1AE}|Services\\Discount\\Discount.Api\\Discount.Api.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0711E00D-DB32-77AE-6AE3-CA25496CD1AE}|Services\\Discount\\Discount.Api\\Discount.Api.csproj|solutionrelative:services\\discount\\discount.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,306 +43,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Basket.API",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Basket.API.csproj",
-              "RelativeDocumentMoniker": "Services\\Basket\\Basket.API\\Basket.API.csproj",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Basket.API.csproj*",
-              "RelativeToolTip": "Services\\Basket\\Basket.API\\Basket.API.csproj*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAQAAAAAAAAAA==",
+              "Title": "Common.Logging",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Infrastructure\\Common.Logging\\Common.Logging.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Common.Logging\\Common.Logging.csproj",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Infrastructure\\Common.Logging\\Common.Logging.csproj",
+              "RelativeToolTip": "Infrastructure\\Common.Logging\\Common.Logging.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-14T09:23:49.734Z",
+              "WhenOpened": "2025-12-14T10:11:48.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ordering.API",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\Ordering.API.csproj",
+              "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.API\\Ordering.API.csproj",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\Ordering.API.csproj",
+              "RelativeToolTip": "Services\\Ordering\\Ordering.API\\Ordering.API.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-14T10:11:04.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\Program.cs",
-              "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.API\\Program.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\Program.cs",
-              "RelativeToolTip": "Services\\Ordering\\Ordering.API\\Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T05:56:30.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.API\\appsettings.json",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\appsettings.json",
-              "RelativeToolTip": "Services\\Ordering\\Ordering.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-09T05:28:03.989Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Services\\Basket\\Basket.API\\appsettings.json",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\appsettings.json",
-              "RelativeToolTip": "Services\\Basket\\Basket.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-09T05:27:37.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Program.cs",
-              "RelativeDocumentMoniker": "Services\\Basket\\Basket.API\\Program.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Program.cs",
-              "RelativeToolTip": "Services\\Basket\\Basket.API\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T05:27:28.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DbExtension.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\Extensions\\DbExtension.cs",
-              "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.API\\Extensions\\DbExtension.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\Extensions\\DbExtension.cs",
-              "RelativeToolTip": "Services\\Ordering\\Ordering.API\\Extensions\\DbExtension.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBcAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T00:49:32.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Basket.Application.csproj",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.Application\\Basket.Application.csproj",
-              "RelativeDocumentMoniker": "Services\\Basket\\Basket.Application\\Basket.Application.csproj",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.Application\\Basket.Application.csproj",
-              "RelativeToolTip": "Services\\Basket\\Basket.Application\\Basket.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Title": "Discount.Api",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Discount.Api.csproj",
+              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Api\\Discount.Api.csproj",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Discount.Api.csproj",
+              "RelativeToolTip": "Services\\Discount\\Discount.Api\\Discount.Api.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-27T22:58:22.809Z",
+              "WhenOpened": "2025-12-14T10:11:02.04Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DiscountServices.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Services\\DiscountServices.cs",
-              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Api\\Services\\DiscountServices.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Services\\DiscountServices.cs",
-              "RelativeToolTip": "Services\\Discount\\Discount.Api\\Services\\DiscountServices.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T22:55:33.857Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "docker-compose.override.yml",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.override.yml",
-              "RelativeDocumentMoniker": "docker-compose.override.yml",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.override.yml",
-              "RelativeToolTip": "docker-compose.override.yml",
-              "ViewState": "AgIAAF4AAAAAAAAAAAArwHUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-11-27T21:37:34.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateShoppingCartHandler.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.Application\\Handlers\\CreateShoppingCartHandler.cs",
-              "RelativeDocumentMoniker": "Services\\Basket\\Basket.Application\\Handlers\\CreateShoppingCartHandler.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.Application\\Handlers\\CreateShoppingCartHandler.cs",
-              "RelativeToolTip": "Services\\Basket\\Basket.Application\\Handlers\\CreateShoppingCartHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T23:55:50.258Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UnhandledExceptionBehaviour.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.Application\\Behaviour\\UnhandledExceptionBehaviour.cs",
-              "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.Application\\Behaviour\\UnhandledExceptionBehaviour.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.Application\\Behaviour\\UnhandledExceptionBehaviour.cs",
-              "RelativeToolTip": "Services\\Ordering\\Ordering.Application\\Behaviour\\UnhandledExceptionBehaviour.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T00:48:17.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-11-27T21:37:16.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrderContextSeed.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.Infrastructure\\Data\\OrderContextSeed.cs",
-              "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.Infrastructure\\Data\\OrderContextSeed.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.Infrastructure\\Data\\OrderContextSeed.cs",
-              "RelativeToolTip": "Services\\Ordering\\Ordering.Infrastructure\\Data\\OrderContextSeed.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T08:25:09.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Microsoft.VisualStudio.Docker.Compose.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAUwMoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-12-08T07:51:47.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Discount.Infrastructure.csproj",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Infrastructure\\Discount.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Infrastructure\\Discount.Infrastructure.csproj",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Infrastructure\\Discount.Infrastructure.csproj",
-              "RelativeToolTip": "Services\\Discount\\Discount.Infrastructure\\Discount.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA1AAAAAAAAAA==",
+              "Title": "Catalog.API",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+              "RelativeDocumentMoniker": "Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+              "RelativeToolTip": "Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-27T22:58:43.071Z",
+              "WhenOpened": "2025-12-14T10:10:59.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DiscountGrpcService.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.Application\\GrpcService\\DiscountGrpcService.cs",
-              "RelativeDocumentMoniker": "Services\\Basket\\Basket.Application\\GrpcService\\DiscountGrpcService.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.Application\\GrpcService\\DiscountGrpcService.cs",
-              "RelativeToolTip": "Services\\Basket\\Basket.Application\\GrpcService\\DiscountGrpcService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T23:07:15.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Discount.Application.csproj",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Discount.Application.csproj",
-              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Application\\Discount.Application.csproj",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Discount.Application.csproj",
-              "RelativeToolTip": "Services\\Discount\\Discount.Application\\Discount.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Basket.API",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Basket.API.csproj",
+              "RelativeDocumentMoniker": "Services\\Basket\\Basket.API\\Basket.API.csproj",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Basket.API.csproj",
+              "RelativeToolTip": "Services\\Basket\\Basket.API\\Basket.API.csproj",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-27T22:43:03.299Z",
+              "WhenOpened": "2025-12-14T10:10:56.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Api\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Services\\Discount\\Discount.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-27T22:06:46.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.API\\Dockerfile",
-              "RelativeDocumentMoniker": "Services\\Catalog\\Catalog.API\\Dockerfile",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.API\\Dockerfile",
-              "RelativeToolTip": "Services\\Catalog\\Catalog.API\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-27T21:36:32.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Dockerfile",
-              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Api\\Dockerfile",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Dockerfile",
-              "RelativeToolTip": "Services\\Discount\\Discount.Api\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-27T21:36:19.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "GetDiscountQueryHandler.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Handlers\\GetDiscountQueryHandler.cs",
-              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Application\\Handlers\\GetDiscountQueryHandler.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Handlers\\GetDiscountQueryHandler.cs",
-              "RelativeToolTip": "Services\\Discount\\Discount.Application\\Handlers\\GetDiscountQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Api\\Program.cs",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Program.cs",
+              "RelativeToolTip": "Services\\Discount\\Discount.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T23:48:31.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IDiscountRepository.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Core\\Repositories\\IDiscountRepository.cs",
-              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Core\\Repositories\\IDiscountRepository.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Core\\Repositories\\IDiscountRepository.cs",
-              "RelativeToolTip": "Services\\Discount\\Discount.Core\\Repositories\\IDiscountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T23:48:25.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DiscountProfile.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Mapper\\DiscountProfile.cs",
-              "RelativeDocumentMoniker": "Services\\Discount\\Discount.Application\\Mapper\\DiscountProfile.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Mapper\\DiscountProfile.cs",
-              "RelativeToolTip": "Services\\Discount\\Discount.Application\\Mapper\\DiscountProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T23:48:20.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "docker-compose.dcproj",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.dcproj",
-              "RelativeDocumentMoniker": "docker-compose.dcproj",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\docker-compose.dcproj",
-              "RelativeToolTip": "docker-compose.dcproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-26T17:42:49.666Z",
+              "WhenOpened": "2025-12-14T10:10:27.232Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ApiController.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.API\\Controllers\\ApiController.cs",
-              "RelativeDocumentMoniker": "Services\\Catalog\\Catalog.API\\Controllers\\ApiController.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.API\\Controllers\\ApiController.cs",
-              "RelativeToolTip": "Services\\Catalog\\Catalog.API\\Controllers\\ApiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T02:51:45.288Z"
             }
           ]
         }

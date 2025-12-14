@@ -27,6 +27,7 @@ if (app.Environment.IsDevelopment())
 // Migrate Database
 app.MigrateDatabase<Program>();
 app.UseRouting();
+#pragma warning disable ASP0014 // Suggest using top level route registrations
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapGrpcService<DiscountServices>();
@@ -36,6 +37,7 @@ app.UseEndpoints(endpoints =>
                                           "To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
     });
 });
+#pragma warning restore ASP0014 // Suggest using top level route registrations
 
 
 app.Run();

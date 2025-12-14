@@ -1,3 +1,4 @@
+using EventBus.Messages.Common;
 using MassTransit;
 using Ordering.API.EventBusConsumer;
 using Ordering.API.Extensions;
@@ -37,7 +38,18 @@ builder.Services.AddMassTransit(config =>
 {
     // Mark this a consumer
     config.AddConsumer<BasketOrderingConsumer>();
+    config.UsingRabbitMq((ctx, cfg) =>
+    {
+        cfg.Host(builder.Configuration["EventBusSettings:HostAddress"]);
+        // provide the queue name with consumer settings
+        cfg.ReceiveEndpoint(EventBusConstant.BasketCheckoutQueue, c =>
+        {
+            c.ConfigureConsumer<BasketOrderingConsumer>(ctx);
+        });
+    });
+    
 });
+builder.Services.AddMassTransitHostedService();
 // Apply db Migrations
 
 // Application Services

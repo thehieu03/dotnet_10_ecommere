@@ -1,8 +1,13 @@
 using Basket.Application.GrpcService;
+using Common.Logging;
 using Discount.Grpc.Protos;
 using MassTransit;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+// Add Serilog Configuration
+builder.Host.UseSerilog(Logging.cfg);
+// Add Controllers and API Versioning
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 // Add API Versioning

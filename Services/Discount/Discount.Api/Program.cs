@@ -1,11 +1,15 @@
-using System.Reflection;
+using Common.Logging;
 using Discount.Api.Services;
 using Discount.Application.Handlers;
 using Discount.Core.Repositories;
 using Discount.Infrastructure.Extensions;
 using Discount.Infrastructure.Repositories;
+using Serilog;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
+// Add Serilog Configuration
+builder.Host.UseSerilog(Logging.cfg);
 // Register AutoMapper
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 // Register MediatR

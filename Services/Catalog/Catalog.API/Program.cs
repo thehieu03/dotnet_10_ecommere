@@ -1,4 +1,11 @@
+using Common.Logging;
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
+// Add Serilog Configuration
+builder.Host.UseSerilog(Logging.cfg);
+
+// Add Controllers and API Versioning
 builder.Services.AddControllers();
 builder.Services.AddApiVersioning(options =>
 {

@@ -1,6 +1,6 @@
 ﻿namespace Catalog.API.Controllers;
 
-public class CatalogController(IMediator mediator) : ApiController
+public class CatalogController(IMediator mediator,ILogger<CatalogController> logger) : ApiController
 {
     [HttpGet]
     [Route("[action]/{id}",Name = "GetProductById")]
@@ -20,6 +20,7 @@ public class CatalogController(IMediator mediator) : ApiController
     {
         var query = new GetProductByNameQuery(productName);
         var result= await mediator.Send(query);
+        logger.LogInformation($"Product with {productName} fetched");
         return Ok(result);
     }
 

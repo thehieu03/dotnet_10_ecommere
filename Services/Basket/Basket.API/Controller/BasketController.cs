@@ -5,10 +5,11 @@ using MassTransit;
 
 namespace Basket.API.Controller;
 [ApiVersion("1.0")]
-public class BasketController(IMediator mediator,IPublishEndpoint endpoint) : ApiController
+public class BasketController(IMediator mediator,IPublishEndpoint endpoint,ILogger<BasketController> logger) : ApiController
 {
     IMediator _mediator { get; } = mediator;
     IPublishEndpoint _publishEndpoint { get; } = endpoint;
+    ILogger<BasketController> _logger { get; } = logger;
 
     [HttpGet]
     [Route("[action]/{userName}", Name = "GetBasketByUserName")]
@@ -51,6 +52,7 @@ public class BasketController(IMediator mediator,IPublishEndpoint endpoint) : Ap
         var eventMsg = BasketMapper.Mapper.Map<BasketCheckoutEvent>(basketCheckout);
         eventMsg.TotalPrice = basket.TotalPrice;
         await _publishEndpoint.Publish(eventMsg);
+        _logger.LogInformation($"Basket Published for {basket.UserName}");
         var deleteCmd = new DeleteBasketByUserNameCommand(basket.UserName);
         await _mediator.Send(deleteCmd);
         return Accepted();

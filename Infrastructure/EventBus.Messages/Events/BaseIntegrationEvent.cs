@@ -4,7 +4,7 @@ public class BaseIntegrationEvent
 {
     public string CorelationId { get; set; }
     public DateTime CreationDate { get; set; }
-    public BaseIntegrationEvent()
+    protected BaseIntegrationEvent()
     {
         CorelationId=Guid.NewGuid().ToString();
         CreationDate = DateTime.UtcNow;

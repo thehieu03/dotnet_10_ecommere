@@ -7,6 +7,17 @@ namespace Ordering.Infrastructure.Data;
 public class OrderContext(DbContextOptions<OrderContext> options) : DbContext(options)
 {
     public DbSet<Order> Orders { get; set; }
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        
+        // Configure TotalPrice with explicit precision and scale
+        modelBuilder.Entity<Order>()
+            .Property(o => o.TotalPrice)
+            .HasPrecision(18, 2);
+    }
+    
     public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = new CancellationToken())
     {
         foreach (var entry in ChangeTracker.Entries<EntityBase>())

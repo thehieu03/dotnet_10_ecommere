@@ -1,8 +1,9 @@
-﻿using Elastic.Serilog.Sinks;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using Serilog.Events;
 using Serilog.Exceptions;
+using Serilog.Sinks.Elasticsearch;
 
 namespace Common.Logging;
 
@@ -27,7 +28,20 @@ public static class Logging
                 loggerConfiguration.MinimumLevel.Override("Discount", Serilog.Events.LogEventLevel.Debug);
                 loggerConfiguration.MinimumLevel.Override("Ordering", Serilog.Events.LogEventLevel.Debug);
             }
-            //Elastic search
-             
+            // Elasticsearch configuration
+            var elasticUrl = context.Configuration.GetValue<string>("ElasticConfiguration:Uri");
+            if (!string.IsNullOrEmpty(elasticUrl))
+            {
+                loggerConfiguration.WriteTo.Elasticsearch(
+                    new ElasticsearchSinkOptions(new Uri(elasticUrl))
+                    {
+                        AutoRegisterTemplate = true,
+                        AutoRegisterTemplateVersion = AutoRegisterTemplateVersion.ESv8,
+                        IndexFormat = "ecommerce-logs-{0:yyyy.MM.dd}",
+                        MinimumLogEventLevel = LogEventLevel.Debug
+                    }
+                );
+            }
+
         };
 }

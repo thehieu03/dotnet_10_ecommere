@@ -4,7 +4,7 @@ using EventBus.Messages.Common;
 using MassTransit;
 
 namespace Basket.API.Controller;
-[ApiVersion("1.0")]
+[ApiVersion("1")]
 public class BasketController(IMediator mediator,IPublishEndpoint endpoint,ILogger<BasketController> logger) : ApiController
 {
     IMediator _mediator { get; } = mediator;

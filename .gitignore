@@ -206,8 +206,29 @@ _pkginfo.txt
 # Visual Studio cache files
 # files ending in .cache can be ignored
 *.[Cc]ache
+*.nuget.cache
+*.dswa.cache.json
+rpswa.dswa.cache.json
 # but keep track of directories ending in .cache
 !?*.[Cc]ache/
+
+# Auto-generated files in obj/
+**/obj/**/*.cs
+**/obj/**/*.json
+**/obj/**/*.props
+**/obj/**/*.targets
+**/obj/**/*.editorconfig
+**/obj/**/*.txt
+**/obj/**/*.dgspec.json
+**/obj/**/*.g.props
+**/obj/**/*.g.targets
+**/obj/**/AssemblyInfo.cs
+**/obj/**/GlobalUsings.g.cs
+**/obj/**/GeneratedMSBuildEditorConfig.editorconfig
+**/obj/**/staticwebassets.*
+**/obj/**/project.assets.json
+**/obj/**/project.nuget.cache
+**/obj/**/*.AssemblyAttributes.cs
 
 # Others
 ClientBin/

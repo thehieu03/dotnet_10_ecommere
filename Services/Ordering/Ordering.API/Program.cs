@@ -23,8 +23,10 @@ builder.Services.AddApiVersioning(options =>
     options.AssumeDefaultVersionWhenUnspecified = true;
     options.DefaultApiVersion = new ApiVersion(1, 0);
 });
-
-// Add versioned API explorer to support Swagger
+// Consumer class
+builder.Services.AddScoped<BasketOrderingConsumer>();
+builder.Services.AddScoped<BasketCheckoutEventV2>();
+// Add a versioned API explorer to support Swagger
 builder.Services.AddEndpointsApiExplorer();
 
 // Configure Swagger generation
@@ -42,6 +44,7 @@ builder.Services.AddMassTransit(config =>
 {
     // Mark this a consumer
     config.AddConsumer<BasketOrderingConsumer>();
+    config.AddConsumer<BasketOrderingConsumerV2>();
     config.UsingRabbitMq((ctx, cfg) =>
     {
         cfg.Host(builder.Configuration["EventBusSettings:HostAddress"]);
@@ -49,6 +52,11 @@ builder.Services.AddMassTransit(config =>
         cfg.ReceiveEndpoint(EventBusConstant.BasketCheckoutQueue, c =>
         {
             c.ConfigureConsumer<BasketOrderingConsumer>(ctx);
+        });
+        //V2 Version
+        cfg.ReceiveEndpoint(EventBusConstant.BasketCheckoutQueueV2, c =>
+        {
+            c.ConfigureConsumer<BasketOrderingConsumerV2>(ctx);
         });
     });
     
@@ -60,8 +68,7 @@ builder.Services.AddMassTransitHostedService();
 builder.Services.AddApplicationServices();
 // Infra services
 builder.Services.AddInfraServices(builder.Configuration);
-// Consumer class
-builder.Services.AddScoped<BasketOrderingConsumer>();
+
 
 var app = builder.Build();
 

@@ -916,7 +916,7 @@
               "RelativeDocumentMoniker": "Services\\Discount\\Discount.Infrastructure\\Extensions\\DbExtenstion.cs",
               "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Infrastructure\\Extensions\\DbExtenstion.cs",
               "RelativeToolTip": "Services\\Discount\\Discount.Infrastructure\\Extensions\\DbExtenstion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-21T13:16:48.45Z",
               "EditorCaption": ""
@@ -931,8 +931,7 @@
               "RelativeToolTip": "Services\\Catalog\\Catalog.Core\\Specs\\Pagination.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T12:37:37.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-15T12:37:37.079Z"
             },
             {
               "$type": "Document",

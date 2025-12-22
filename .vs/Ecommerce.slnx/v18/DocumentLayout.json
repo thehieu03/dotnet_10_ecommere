@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\dotnet-10-microservices\\Ecommerce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2E0A9629-25F9-E2D4-1687-F434020C1C38}|Infrastructure\\EventBus.Messages\\EventBus.Messages.csproj|d:\\dotnet-10-microservices\\ecommerce\\infrastructure\\eventbus.messages\\events\\basketcheckouteventv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0A9629-25F9-E2D4-1687-F434020C1C38}|Infrastructure\\EventBus.Messages\\EventBus.Messages.csproj|solutionrelative:infrastructure\\eventbus.messages\\events\\basketcheckouteventv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\basket\\basket.api\\controller\\v2\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|solutionrelative:services\\basket\\basket.api\\controller\\v2\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\basket\\basket.api\\controller\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|solutionrelative:services\\basket\\basket.api\\controller\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C9B124ED-6C93-332F-6DF2-23DC11C58826}|Services\\Discount\\Discount.Infrastructure\\Discount.Infrastructure.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\discount\\discount.infrastructure\\extensions\\dbextenstion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9B124ED-6C93-332F-6DF2-23DC11C58826}|Services\\Discount\\Discount.Infrastructure\\Discount.Infrastructure.csproj|solutionrelative:services\\discount\\discount.infrastructure\\extensions\\dbextenstion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{33FC5A32-CDDC-EE43-9CA6-483EA2BFBE99}|Services\\Catalog\\Catalog.API\\Catalog.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\catalog\\catalog.api\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33FC5A32-CDDC-EE43-9CA6-483EA2BFBE99}|Services\\Catalog\\Catalog.API\\Catalog.API.csproj|solutionrelative:services\\catalog\\catalog.api\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\basket\\basket.api\\controller\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7CE1BEA-4195-760B-8C09-457FB57B8416}|Services\\Basket\\Basket.API\\Basket.API.csproj|solutionrelative:services\\basket\\basket.api\\controller\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F18CBF71-D1A1-6332-2E48-B7E2DBC30EA5}|Services\\Ordering\\Ordering.API\\Ordering.API.csproj|d:\\dotnet-10-microservices\\ecommerce\\services\\ordering\\ordering.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 204,
+          "SelectedChildIndex": 205,
           "Children": [
             {
               "$type": "Bookmark",
@@ -910,32 +918,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Controller\\V2\\BasketController.cs",
+              "RelativeDocumentMoniker": "Services\\Basket\\Basket.API\\Controller\\V2\\BasketController.cs",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Controller\\V2\\BasketController.cs",
+              "RelativeToolTip": "Services\\Basket\\Basket.API\\Controller\\V2\\BasketController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:57:02.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BasketCheckoutEventV2.cs",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Infrastructure\\EventBus.Messages\\Events\\BasketCheckoutEventV2.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\EventBus.Messages\\Events\\BasketCheckoutEventV2.cs",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Infrastructure\\EventBus.Messages\\Events\\BasketCheckoutEventV2.cs",
+              "RelativeToolTip": "Infrastructure\\EventBus.Messages\\Events\\BasketCheckoutEventV2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:52:53.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DbExtenstion.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Infrastructure\\Extensions\\DbExtenstion.cs",
               "RelativeDocumentMoniker": "Services\\Discount\\Discount.Infrastructure\\Extensions\\DbExtenstion.cs",
               "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Infrastructure\\Extensions\\DbExtenstion.cs",
               "RelativeToolTip": "Services\\Discount\\Discount.Infrastructure\\Extensions\\DbExtenstion.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCkAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-21T13:16:48.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pagination.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.Core\\Specs\\Pagination.cs",
-              "RelativeDocumentMoniker": "Services\\Catalog\\Catalog.Core\\Specs\\Pagination.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.Core\\Specs\\Pagination.cs",
-              "RelativeToolTip": "Services\\Catalog\\Catalog.Core\\Specs\\Pagination.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T12:37:37.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\Dockerfile",
               "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.API\\Dockerfile",
@@ -947,7 +969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "CheckoutOrderCommandHandler.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.Application\\Handlers\\CheckoutOrderCommandHandler.cs",
               "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.Application\\Handlers\\CheckoutOrderCommandHandler.cs",
@@ -959,7 +981,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Controller\\BasketController.cs",
+              "RelativeDocumentMoniker": "Services\\Basket\\Basket.API\\Controller\\BasketController.cs",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Controller\\BasketController.cs",
+              "RelativeToolTip": "Services\\Basket\\Basket.API\\Controller\\BasketController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwCcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T10:48:55.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pagination.cs",
+              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.Core\\Specs\\Pagination.cs",
+              "RelativeDocumentMoniker": "Services\\Catalog\\Catalog.Core\\Specs\\Pagination.cs",
+              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.Core\\Specs\\Pagination.cs",
+              "RelativeToolTip": "Services\\Catalog\\Catalog.Core\\Specs\\Pagination.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:37:37.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GetDiscountQueryHandler.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Handlers\\GetDiscountQueryHandler.cs",
               "RelativeDocumentMoniker": "Services\\Discount\\Discount.Application\\Handlers\\GetDiscountQueryHandler.cs",
@@ -971,7 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "GetDiscountQuery.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Application\\Queries\\GetDiscountQuery.cs",
               "RelativeDocumentMoniker": "Services\\Discount\\Discount.Application\\Queries\\GetDiscountQuery.cs",
@@ -983,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "GetBasketByUserNameQuery.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.Application\\Queries\\GetBasketByUserNameQuery.cs",
               "RelativeDocumentMoniker": "Services\\Basket\\Basket.Application\\Queries\\GetBasketByUserNameQuery.cs",
@@ -995,7 +1042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "CreateShoppingCartHandler.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.Application\\Handlers\\CreateShoppingCartHandler.cs",
               "RelativeDocumentMoniker": "Services\\Basket\\Basket.Application\\Handlers\\CreateShoppingCartHandler.cs",
@@ -1007,7 +1054,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "CatalogController.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.API\\Controllers\\CatalogController.cs",
               "RelativeDocumentMoniker": "Services\\Catalog\\Catalog.API\\Controllers\\CatalogController.cs",
@@ -1019,19 +1066,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BasketController.cs",
-              "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Controller\\BasketController.cs",
-              "RelativeDocumentMoniker": "Services\\Basket\\Basket.API\\Controller\\BasketController.cs",
-              "ToolTip": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Controller\\BasketController.cs",
-              "RelativeToolTip": "Services\\Basket\\Basket.API\\Controller\\BasketController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAcwDUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T10:48:55.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\Program.cs",
               "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.API\\Program.cs",
@@ -1043,7 +1078,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Program.cs",
               "RelativeDocumentMoniker": "Services\\Basket\\Basket.API\\Program.cs",
@@ -1055,7 +1090,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.API\\Program.cs",
               "RelativeDocumentMoniker": "Services\\Catalog\\Catalog.API\\Program.cs",
@@ -1067,7 +1102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Logging.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Infrastructure\\Common.Logging\\Logging.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Common.Logging\\Logging.cs",
@@ -1079,7 +1114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Common.Logging.csproj",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Infrastructure\\Common.Logging\\Common.Logging.csproj",
               "RelativeDocumentMoniker": "Infrastructure\\Common.Logging\\Common.Logging.csproj",
@@ -1091,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Ordering.API.csproj",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Ordering\\Ordering.API\\Ordering.API.csproj",
               "RelativeDocumentMoniker": "Services\\Ordering\\Ordering.API\\Ordering.API.csproj",
@@ -1103,7 +1138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Discount.Api.csproj",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Discount.Api.csproj",
               "RelativeDocumentMoniker": "Services\\Discount\\Discount.Api\\Discount.Api.csproj",
@@ -1115,7 +1150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Catalog.API.csproj",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
               "RelativeDocumentMoniker": "Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
@@ -1127,7 +1162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Basket.API.csproj",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Basket\\Basket.API\\Basket.API.csproj",
               "RelativeDocumentMoniker": "Services\\Basket\\Basket.API\\Basket.API.csproj",
@@ -1139,7 +1174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\Ecommerce\\Services\\Discount\\Discount.Api\\Program.cs",
               "RelativeDocumentMoniker": "Services\\Discount\\Discount.Api\\Program.cs",

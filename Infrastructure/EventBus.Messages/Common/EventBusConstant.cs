@@ -1,6 +1,6 @@
 ﻿namespace EventBus.Messages.Common;
 
-public class EventBusConstant
+public static class EventBusConstant
 {
     public const string BasketCheckoutQueue = "basketchecount-queue";
     

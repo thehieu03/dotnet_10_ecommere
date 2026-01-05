@@ -1,6 +1,4 @@
-﻿using Basket.Core.Entities;
-
-namespace Basket.Application.Commands;
+﻿namespace Basket.Application.Commands;
 
 public class CreateShoppingCartCommand : IRequest<ShoppingCartResponse>
 {

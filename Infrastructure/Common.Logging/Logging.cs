@@ -42,6 +42,5 @@ public static class Logging
                     }
                 );
             }
-
         };
 }

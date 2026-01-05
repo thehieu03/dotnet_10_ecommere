@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Error";
+    var errorId = ViewData["ErrorId"] as string ?? "";
+}
+
+<h1>Error</h1>
+
+<div class="error">
+    An error occurred during authentication.
+    @if (!string.IsNullOrEmpty(errorId))
+    {
+        <br />Error ID: @errorId
+    }
+</div>
+

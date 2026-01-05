@@ -4,7 +4,9 @@ using Basket.Application.GrpcService;
 using Common.Logging;
 using Discount.Grpc.Protos;
 using MassTransit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Reflection;
@@ -86,14 +88,41 @@ builder.Services.AddGrpcClient<DiscountService.DiscountServiceClient>(cfg =>
 // Register DiscountGrpcService
 builder.Services.AddScoped<DiscountGrpcService>();
 
+// Add Authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.Authority = builder.Configuration["IdentityServer:Authority"] ?? "http://localhost:9009";
+        options.RequireHttpsMetadata = false; // Only for development
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateAudience = true,
+            ValidAudiences = new[] { "basket", "gateway" },
+            ValidateIssuer = true,
+            ValidateLifetime = true
+        };
+    });
+
+// Add Authorization
+builder.Services.AddAuthorization(options =>
+{
+    // Public: View basket, add items
+    options.AddPolicy("Public", policy => policy.RequireAssertion(_ => true));
+    
+    // RequireAuth: Checkout (cần đăng nhập)
+    options.AddPolicy("RequireAuth", policy => 
+        policy.RequireAuthenticatedUser());
+});
+
 // Add CORS
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.AllowAnyOrigin()
+        policy.WithOrigins("http://localhost:3000")
               .AllowAnyMethod()
-              .AllowAnyHeader();
+              .AllowAnyHeader()
+              .AllowCredentials();
     });
 });
 
@@ -114,8 +143,10 @@ app.UseSwaggerUI(c =>
     c.RoutePrefix = "swagger";
 });
 
-// CORS must be before MapControllers
+// Middleware order is important!
 app.UseCors();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseHttpsRedirection();
 app.MapControllers();

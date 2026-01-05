@@ -1,6 +1,8 @@
 using Common.Logging;
 using EventBus.Messages.Common;
 using MassTransit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Ordering.API.EventBusConsumer;
 using Ordering.API.Extensions;
 using Ordering.Application.Extensions;
@@ -69,14 +71,41 @@ builder.Services.AddApplicationServices();
 // Infra services
 builder.Services.AddInfraServices(builder.Configuration);
 
+// Add Authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.Authority = builder.Configuration["IdentityServer:Authority"] ?? "http://localhost:9009";
+        options.RequireHttpsMetadata = false; // Only for development
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateAudience = true,
+            ValidAudiences = new[] { "ordering", "gateway" },
+            ValidateIssuer = true,
+            ValidateLifetime = true
+        };
+    });
+
+// Add Authorization
+builder.Services.AddAuthorization(options =>
+{
+    // Public endpoints
+    options.AddPolicy("Public", policy => policy.RequireAssertion(_ => true));
+    
+    // RequireAuth: Protected endpoints
+    options.AddPolicy("RequireAuth", policy => 
+        policy.RequireAuthenticatedUser());
+});
+
 // Add CORS
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.AllowAnyOrigin()
+        policy.WithOrigins("http://localhost:3000")
               .AllowAnyMethod()
-              .AllowAnyHeader();
+              .AllowAnyHeader()
+              .AllowCredentials();
     });
 });
 
@@ -97,8 +126,10 @@ app.MigrateDatabase<OrderContext>((context, services) =>
     OrderContextSeed.SeedAsync(context, logger).Wait();
 });
 
-// CORS must be before MapControllers
+// Middleware order is important!
 app.UseCors();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseHttpsRedirection();
 app.MapControllers();

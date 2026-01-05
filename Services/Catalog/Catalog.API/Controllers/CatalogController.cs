@@ -1,5 +1,8 @@
-﻿namespace Catalog.API.Controllers;
+﻿using Microsoft.AspNetCore.Authorization;
 
+namespace Catalog.API.Controllers;
+
+[Authorize(Policy = "Public")] // Public by default
 public class CatalogController(IMediator mediator,ILogger<CatalogController> logger) : ApiController
 {
     [HttpGet]
@@ -63,6 +66,7 @@ public class CatalogController(IMediator mediator,ILogger<CatalogController> log
     }
     [HttpPost]
     [Route("CreateProduct")]
+    [Authorize(Policy = "RequireAuth")]
     [ProducesResponseType(typeof(ProductResponse), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<ProductResponse>> CreateProduct([FromBody] CreateProductCommand command)
     {
@@ -71,6 +75,7 @@ public class CatalogController(IMediator mediator,ILogger<CatalogController> log
     }
     [HttpPut]
     [Route("UpdateProduct")]
+    [Authorize(Policy = "RequireAuth")]
     [ProducesResponseType(typeof(bool), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<bool>> UpdateProduct([FromBody] UpdateProductCommand command)
     {
@@ -79,6 +84,7 @@ public class CatalogController(IMediator mediator,ILogger<CatalogController> log
     }
     [HttpDelete]
     [Route("{id}",Name="DeleteProduct")]
+    [Authorize(Policy = "RequireAuth")]
     [ProducesResponseType(typeof(bool), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<bool>> DeleteProduct(string id)
     {

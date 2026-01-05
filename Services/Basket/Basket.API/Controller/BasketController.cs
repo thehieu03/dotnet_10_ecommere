@@ -2,9 +2,11 @@
 using Basket.Core.Entities;
 using EventBus.Messages.Common;
 using MassTransit;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Basket.API.Controller;
 [ApiVersion("1")]
+[Authorize(Policy = "Public")] // Public by default
 public class BasketController(IMediator mediator,IPublishEndpoint endpoint,ILogger<BasketController> logger) : ApiController
 {
     IMediator _mediator { get; } = mediator;
@@ -39,6 +41,7 @@ public class BasketController(IMediator mediator,IPublishEndpoint endpoint,ILogg
     }
     [Route("[action]")]
     [HttpPost]
+    [Authorize(Policy = "RequireAuth")] // Require authentication for checkout
     [ProducesResponseType((int)HttpStatusCode.Accepted)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Checkout([FromBody] BasketCheckout basketCheckout)

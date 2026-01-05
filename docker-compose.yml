@@ -38,6 +38,12 @@ services:
     build:
       context: .
       dockerfile: Services/Ordering/Ordering.API/Dockerfile
+  identity_api:
+    image: ${DOCKER_REGISTRY-}identity_api
+    container_name: identity_api
+    build:
+      context: .
+      dockerfile: Services/Identity/Identity.API/Dockerfile
   Portainer:
     image: portainer/portainer-ce
     container_name: Portainer

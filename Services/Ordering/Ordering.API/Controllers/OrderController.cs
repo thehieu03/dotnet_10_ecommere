@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Ordering.Application.Commands;
 using Ordering.Application.Queries;
@@ -7,6 +8,7 @@ using Ordering.Application.Responses;
 
 namespace Ordering.API.Controllers;
 
+[Authorize(Policy = "Public")] // Public by default
 public class OrderController : ApiController
 {
     private readonly IMediator _mediator;

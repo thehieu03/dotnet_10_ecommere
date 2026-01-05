@@ -1,4 +1,6 @@
 using Common.Logging;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,14 +38,41 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IBrandRepository, ProductRepository>();
 builder.Services.AddScoped<ITypeRepository, ProductRepository>();
 
+// Add Authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.Authority = builder.Configuration["IdentityServer:Authority"] ?? "http://localhost:9009";
+        options.RequireHttpsMetadata = false; // Only for development
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateAudience = true,
+            ValidAudiences = new[] { "catalog", "gateway" },
+            ValidateIssuer = true,
+            ValidateLifetime = true
+        };
+    });
+
+// Add Authorization
+builder.Services.AddAuthorization(options =>
+{
+    // Public endpoints - không cần authentication
+    options.AddPolicy("Public", policy => policy.RequireAssertion(_ => true));
+    
+    // Protected endpoints - cần authentication
+    options.AddPolicy("RequireAuth", policy => 
+        policy.RequireAuthenticatedUser());
+});
+
 // Add CORS
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.AllowAnyOrigin()
+        policy.WithOrigins("http://localhost:3000")
               .AllowAnyMethod()
-              .AllowAnyHeader();
+              .AllowAnyHeader()
+              .AllowCredentials();
     });
 });
 
@@ -56,10 +85,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// CORS must be after UseRouting (implicit) but before UseAuthorization and MapControllers
+// Middleware order is important!
 app.UseRouting();
 app.UseCors();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

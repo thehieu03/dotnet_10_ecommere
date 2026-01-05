@@ -28,6 +28,9 @@
     <Project Path="Services/Ordering/Ordering.Core/Ordering.Core.csproj" />
     <Project Path="Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/Services/Identity/">
+    <Project Path="Services/Identity/Identity.API/Identity.API.csproj" />
+  </Folder>
   <Project Path="docker-compose.dcproj">
     <Build />
   </Project>

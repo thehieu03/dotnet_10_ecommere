@@ -65,7 +65,6 @@ var assemblies = new Assembly[]
     Assembly.GetExecutingAssembly(), typeof(CreateShoppingCartHandler).Assembly,
 };
 builder.Services.AddMediatR(cfg => { cfg.RegisterServicesFromAssemblies(assemblies); });
-// Add Redis Cache
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration.GetValue<string>("CacheSettings:ConnectionString");
@@ -75,11 +74,8 @@ builder.Services.AddMassTransit(configure =>
     configure.UsingRabbitMq((ct, cfg) => { cfg.Host(builder.Configuration["EventBusSettings:HostAddress"]); });
 });
 builder.Services.AddMassTransitHostedService();
-// Application Services
 builder.Services.AddScoped<IBasketRepository, BaskRepository>();
 builder.Services.AddScoped<DiscountGrpcService>();
-
-// Register gRPC Client for Discount Service
 builder.Services.AddGrpcClient<DiscountService.DiscountServiceClient>(cfg =>
 {
     var discountUrl = builder.Configuration["GrpcSettings:DiscountUrl"]
@@ -89,6 +85,18 @@ builder.Services.AddGrpcClient<DiscountService.DiscountServiceClient>(cfg =>
 
 // Register DiscountGrpcService
 builder.Services.AddScoped<DiscountGrpcService>();
+
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
 
@@ -103,8 +111,12 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Basket.API v1");
     c.SwaggerEndpoint("/swagger/v2/swagger.json", "Basket.API v2");
-    c.RoutePrefix = "swagger"; // Swagger UI sẽ ở /swagger
+    c.RoutePrefix = "swagger";
 });
+
+// CORS must be before MapControllers
+app.UseCors();
+
 app.UseHttpsRedirection();
 app.MapControllers();
 app.Run();

@@ -69,6 +69,16 @@ builder.Services.AddApplicationServices();
 // Infra services
 builder.Services.AddInfraServices(builder.Configuration);
 
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
 
 var app = builder.Build();
 
@@ -86,6 +96,9 @@ app.MigrateDatabase<OrderContext>((context, services) =>
     var logger = services.GetService<ILogger<OrderContextSeed>>();
     OrderContextSeed.SeedAsync(context, logger).Wait();
 });
+
+// CORS must be before MapControllers
+app.UseCors();
 
 app.UseHttpsRedirection();
 app.MapControllers();

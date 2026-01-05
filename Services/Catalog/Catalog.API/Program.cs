@@ -16,9 +16,9 @@ builder.Services.AddApiVersioning(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1",new OpenApiInfo()
+    c.SwaggerDoc("v1", new OpenApiInfo()
     {
-        Title =  "Catalog API",
+        Title = "Catalog API",
         Version = "v1"
     });
 });
@@ -32,9 +32,21 @@ var assemblies = new Assembly[]
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(assemblies));
 // Register Application Services
 builder.Services.AddScoped<ICatalogContext, CatalogContext>();
-builder.Services.AddScoped<IProductRepository,ProductRepository>();
-builder.Services.AddScoped<IBrandRepository,ProductRepository>();
-builder.Services.AddScoped<ITypeRepository,ProductRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IBrandRepository, ProductRepository>();
+builder.Services.AddScoped<ITypeRepository, ProductRepository>();
+
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -43,6 +55,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// CORS must be after UseRouting (implicit) but before UseAuthorization and MapControllers
+app.UseRouting();
+app.UseCors();
+
 app.UseAuthorization();
 
 app.MapControllers();

@@ -37,6 +37,12 @@
   <Folder Name="/Services/Identity/">
     <Project Path="Services/Identity/Identity.API/Identity.API.csproj" />
   </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/Catalog.API.Tests/Catalog.API.Tests.csproj" />
+    <Project Path="Tests/Basket.API.Tests/Basket.API.Tests.csproj" />
+    <Project Path="Tests/Ordering.API.Tests/Ordering.API.Tests.csproj" />
+    <Project Path="Tests/Discount.API.Tests/Discount.API.Tests.csproj" />
+  </Folder>
   <Project Path="docker-compose.dcproj">
     <Build />
   </Project>

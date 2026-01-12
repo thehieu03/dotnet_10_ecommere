@@ -879,7 +879,7 @@
               "RelativeDocumentMoniker": "..\\dotnet10.Apphost\\dotnet10.Apphost.AppHost\\AppHost.cs",
               "ToolTip": "D:\\dotnet-10-microservices\\dotnet10.Apphost\\dotnet10.Apphost.AppHost\\AppHost.cs",
               "RelativeToolTip": "..\\dotnet10.Apphost\\dotnet10.Apphost.AppHost\\AppHost.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-12T19:02:23.144Z",
               "EditorCaption": ""
@@ -887,15 +887,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "dotnet10.Apphost.ApiService",
+              "Title": "dotnet10.Apphost.ApiService.csproj",
               "DocumentMoniker": "D:\\dotnet-10-microservices\\dotnet10.Apphost\\dotnet10.Apphost.ApiService\\dotnet10.Apphost.ApiService.csproj",
               "RelativeDocumentMoniker": "..\\dotnet10.Apphost\\dotnet10.Apphost.ApiService\\dotnet10.Apphost.ApiService.csproj",
               "ToolTip": "D:\\dotnet-10-microservices\\dotnet10.Apphost\\dotnet10.Apphost.ApiService\\dotnet10.Apphost.ApiService.csproj",
               "RelativeToolTip": "..\\dotnet10.Apphost\\dotnet10.Apphost.ApiService\\dotnet10.Apphost.ApiService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-12T19:02:16.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T19:02:16.08Z"
             },
             {
               "$type": "Document",
@@ -907,8 +906,7 @@
               "RelativeToolTip": "..\\dotnet10.Apphost\\dotnet10.Apphost.ApiService\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T19:01:38.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T19:01:38.702Z"
             },
             {
               "$type": "Document",
@@ -920,8 +918,7 @@
               "RelativeToolTip": "Services\\Discount\\Discount.Application\\Protos\\discount.proto",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
-              "WhenOpened": "2026-01-12T19:01:31.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T19:01:31.357Z"
             },
             {
               "$type": "Document",
@@ -957,8 +954,7 @@
               "RelativeToolTip": "Services\\Basket\\Basket.API\\Dockerfile",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-08T06:52:16.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T06:52:16.173Z"
             },
             {
               "$type": "Document",
@@ -1006,8 +1002,7 @@
               "RelativeToolTip": "Services\\Basket\\Basket.API\\Basket.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-14T10:10:56.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T10:10:56.355Z"
             },
             {
               "$type": "Document",

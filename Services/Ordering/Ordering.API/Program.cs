@@ -75,7 +75,7 @@ builder.Services.AddInfraServices(builder.Configuration);
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        options.Authority = builder.Configuration["IdentityServer:Authority"] ?? "http://localhost:9009";
+        options.Authority = builder.Configuration["IdentityServer:Authority"] ?? throw new InvalidOperationException("IdentityServer:Authority configuration is missing");
         options.RequireHttpsMetadata = false; // Only for development
         options.TokenValidationParameters = new TokenValidationParameters
         {

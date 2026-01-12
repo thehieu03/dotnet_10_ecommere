@@ -1,6 +1,6 @@
 @{
     ViewData["Title"] = "Error";
-    var errorId = ViewData["ErrorId"] as string ?? "";
+    string errorId = ViewData["ErrorId"]?.ToString() ?? string.Empty;
 }
 
 <h1>Error</h1>
@@ -9,7 +9,7 @@
     An error occurred during authentication.
     @if (!string.IsNullOrEmpty(errorId))
     {
-        <br />Error ID: @errorId
+        <br />
+        <text>Error ID: @errorId</text>
     }
 </div>
-

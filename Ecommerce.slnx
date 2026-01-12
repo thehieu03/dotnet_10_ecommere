@@ -1,4 +1,10 @@
 <Solution>
+  <Folder Name="/App/">
+    <Project Path="../dotnet10.Apphost/dotnet10.Apphost.ApiService/dotnet10.Apphost.ApiService.csproj" />
+    <Project Path="../dotnet10.Apphost/dotnet10.Apphost.AppHost/dotnet10.Apphost.AppHost.csproj" Id="f003e0c5-be5b-4872-add4-3abf9b809c57" />
+    <Project Path="../dotnet10.Apphost/dotnet10.Apphost.ServiceDefaults/dotnet10.Apphost.ServiceDefaults.csproj" />
+    <Project Path="../dotnet10.Apphost/dotnet10.Apphost.Web/dotnet10.Apphost.Web.csproj" />
+  </Folder>
   <Folder Name="/Infrastructure/">
     <Project Path="Infrastructure/Common.Logging/Common.Logging.csproj" />
     <Project Path="Infrastructure/EventBus.Messages/EventBus.Messages.csproj" />

@@ -24,7 +24,16 @@ public static class DbExtenstion
 
     private static void ApplyMigrations(IConfiguration config)
     {
-        using var connection = new NpgsqlConnection(config.GetValue<string>("DatabaseSettings:ConnectionString"));
+        // Đọc connection string từ DatabaseSettings:ConnectionString hoặc ConnectionStrings:DiscountDb (từ Aspire)
+        var connectionString = config.GetValue<string>("DatabaseSettings:ConnectionString") 
+            ?? config.GetConnectionString("DiscountDb")
+            ?? throw new InvalidOperationException("Database connection string is not configured. " +
+                $"DatabaseSettings:ConnectionString = {config.GetValue<string>("DatabaseSettings:ConnectionString")}, " +
+                $"ConnectionStrings:DiscountDb = {config.GetConnectionString("DiscountDb")}");
+        
+        Console.WriteLine($"[DEBUG] Using connection string: {(connectionString?.Length > 50 ? connectionString.Substring(0, 50) + "..." : connectionString)}");
+        
+        using var connection = new NpgsqlConnection(connectionString);
         connection.Open();
         using var cmd = new NpgsqlCommand()
         {
